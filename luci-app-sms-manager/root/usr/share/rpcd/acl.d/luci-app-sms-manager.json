@@ -1,0 +1,43 @@
+{
+	"luci-app-sms-manager": {
+		"description": "Grant access to LuCI app SMS Manager",
+		"read": {
+   			"cgi-io": [ "exec" ],
+    			"file": {
+    				"/sys/class/leds": [ "list" ],
+				"/etc/init.d/sms_manager start" : [ "exec" ],
+				"/etc/init.d/sms_manager stop" : [ "exec" ],
+				"/etc/init.d/sms_manager enable" : [ "exec" ],
+				"/etc/init.d/sms_manager disable" : [ "exec" ],
+				"/etc/init.d/sms_manager restart" : [ "exec" ],
+				"/etc/init.d/led restart" : [ "exec" ],
+				"/sbin/sms_manager_led.sh": [ "exec" ],
+				"/sbin/sms_m_led.sh": [ "exec" ],
+				"/sbin/new_cron_sms_manager.sh": [ "exec" ],
+				"/usr/libexec/package-manager-call list-installed": [ "exec" ],
+				"/usr/libexec/opkg-list installed": [ "exec" ],
+				"/usr/libexec/opkg-call list-installed": [ "exec" ],
+				"/etc/sms_manager": [ "read" ],
+				"/tmp/mysms_manager.txt": [ "read" ],
+				"/etc/modem/sms_manager_atcmmds.user": [ "read" ],
+				"/etc/modem/sms_manager_phonebook.user": [ "read" ],
+				"/etc/modem/sms_manager_ussdcodes.user": [ "read" ]
+			},
+			"uci": [ "sms_manager", "luci-app-sms-manager" ],
+			"ubus": {
+				"sms_manager_sms_forward": [ "forward" ]
+			}
+		},
+		"write": {
+			"file": {
+				"/etc/sms_manager": [ "write" ],
+				"/sys/class/leds/*/brightness": [ "write" ],
+				"/tmp/mysms_manager.txt": [ "write" ],
+				"/etc/modem/sms_manager_atcmmds.user": [ "write" ],
+				"/etc/modem/sms_manager_phonebook.user": [ "write" ],
+				"/etc/modem/sms_manager_ussdcodes.user": [ "write" ]
+			},
+			"uci": [ "sms_manager", "luci-app-sms-manager" ]
+		}
+	}
+}

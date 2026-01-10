@@ -1,0 +1,497 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "SMS Manager"
+msgstr "Menedżer SMS"
+
+msgid "Please select the message(s) to be deleted"
+msgstr "Proszę wybrać wiadomość(-ci) do usunięcia"
+
+msgid "Delete all the messages?"
+msgstr "Usunąć wszystkie wiadomości?"
+
+msgid "Delete selected message(s)?"
+msgstr "Usunąć wybrane wiadomości?"
+
+msgid "Please set the modem for communication"
+msgstr "Proszę ustawić modem do komunikacji"
+
+msgid "No valid SMS IDs found"
+msgstr "Nie znaleziono prawidłowych identyfikatorów SMS"
+
+msgid "Messages deleted successfully"
+msgstr "Wiadomości usunięte pomyślnie"
+
+msgid "Error deleting messages: "
+msgstr "Błąd podczas usuwania wiadomości: "
+
+msgid "Sender"
+msgstr "Nadawca"
+
+msgid "Received"
+msgstr "Odebrane"
+
+msgid "Message"
+msgstr "Wiadomość"
+
+msgid "Please configure the SMS reading modem first"
+msgstr "Proszę najpierw skonfigurować modem do odczytu SMS"
+
+msgid "No SMS messages found"
+msgstr "Nie znaleziono wiadomości SMS"
+
+msgid "Error loading SMS details: "
+msgstr "Błąd podczas wczytywania szczegółów SMS: "
+
+msgid "Error listing SMS: "
+msgstr "Błąd podczas listowania SMS: "
+
+msgid "SMS Messages"
+msgstr "Wiadomości SMS"
+
+msgid "User interface for reading messages using ModemManager."
+msgstr "Interfejs użytkownika do odczytywania wiadomości przy użyciu ModemManager-a."
+
+msgid "Received Messages"
+msgstr "Odebrane wiadomości"
+
+msgid "Message storage area"
+msgstr "Obszar przechowywania wiadomości"
+
+msgid "SM / ME (Automatic selection)"
+msgstr "SM / ME (Automatyczny wybór)"
+
+msgid "Storage SM / ME used"
+msgstr "Użyta pamięć SM / ME"
+
+msgid "Loading..."
+msgstr "Wczytywanie..."
+
+msgid "Delete message(s)"
+msgstr "Usuń wiadomość(-ci)"
+
+msgid "Refresh"
+msgstr "Odśwież"
+
+msgid ""
+msgstr ""
+
+msgid "Please specify the command to send"
+msgstr "Proszę określić komendę do wysłania"
+
+msgid "Please set the modem for communication"
+msgstr "Proszę ustawić modem do komunikacji"
+
+msgid "User interface for sending AT commands using ModemManager."
+msgstr "Interfejs użytkownika do wysyłania poleceń AT przy użyciu ModemManager-a."
+
+msgid "AT Commands"
+msgstr "Polecenia AT"
+
+msgid "User AT commands"
+msgstr "Zdefiniowane polecenia AT"
+
+msgid "Command to send"
+msgstr "Polecenie do wysłania"
+
+msgid "Press [Enter] to send the command, press [Delete] to delete the command"
+msgstr "Naciśnij [Enter] aby wysłać polecenie, naciśnij [Delete] aby usunąć polecenie"
+
+msgid "Clear form"
+msgstr "Wyczyść formularz"
+
+msgid "Send command"
+msgstr "Wyślij polecenie"
+
+msgid "Reply"
+msgstr "Odpowiedź"
+
+msgid ""
+msgstr ""
+
+msgid "Please specify the phone number to which you want to send the message"
+msgstr "Proszę określić numer telefonu, na który chcesz wysłać wiadomość"
+
+msgid "Please specify the message you want to send"
+msgstr "Proszę określić wiadomość, którą chcesz wysłać"
+
+msgid "Please set the modem for communication"
+msgstr "Proszę ustawić modem do komunikacji"
+
+msgid "Please specify phone number"
+msgstr "Proszę podać numer telefonu"
+
+msgid "SMS sent successfully to"
+msgstr "SMS wysłany pomyślnie do"
+
+msgid "Failed to send SMS to"
+msgstr "Nie udało się wysłać SMS do"
+
+msgid "Failed to create SMS"
+msgstr "Nie udało się utworzyć SMS"
+
+msgid "Error creating SMS: "
+msgstr "Błąd podczas tworzenia SMS: "
+
+msgid "The phone number should be preceded by the country prefix (for Poland it is +48)."
+msgstr "Numer telefonu powinien być poprzedzony prefiksem kraju (dla Polski to +48)."
+
+msgid "User interface for sending messages using ModemManager."
+msgstr "Interfejs użytkownika do wysyłania wiadomości przy użyciu ModemManager-a."
+
+msgid "SMS Messages"
+msgstr "Wiadomości SMS"
+
+msgid "User contacts"
+msgstr "Kontakty użytkownika"
+
+msgid "Send to"
+msgstr "Wyślij do"
+
+msgid "Press [Delete] to delete the phone number"
+msgstr "Naciśnij [Delete] aby usunąć numer telefonu"
+
+msgid "Encoding standard"
+msgstr "Standard kodowania"
+
+msgid "GSM-7 encoding (160 characters)"
+msgstr "Kodowanie GSM-7 (160 znaków)"
+
+msgid "GSM-7 (160 characters)"
+msgstr "GSM-7 (160 znaków)"
+
+msgid "Unicode encoding (70 characters), does not support sending national characters (in utf8) - only ascii"
+msgstr "Kodowanie Unicode (70 znaków), nie obsługuje wysyłania znaków narodowych (w utf8) - tylko ascii"
+
+msgid "Unicode (70 characters)"
+msgstr "Unicode (70 znaków)"
+
+msgid "Message text"
+msgstr "Treść wiadomości"
+
+msgid "Press [Delete] to delete the content of the message"
+msgstr "Naciśnij [Delete] aby usunąć treść wiadomości"
+
+msgid "Characters remaining:"
+msgstr "Pozostało znaków:"
+
+msgid "160"
+msgstr "160"
+
+msgid "Clear form"
+msgstr "Wyczyść formularz"
+
+msgid "Send"
+msgstr "Wyślij"
+
+msgid "to number"
+msgstr "do numeru"
+
+msgid "to group"
+msgstr "do grupy"
+
+msgid "Send to number"
+msgstr "Wyślij do numeru"
+
+msgid "Status"
+msgstr "Status"
+
+msgid ""
+msgstr ""
+
+msgid "Error sending USSD code. Please check modem status."
+msgstr "Błąd wysyłania kodu USSD. Sprawdź status modemu."
+
+msgid "ModemManager error. Please check if modem is available."
+msgstr "Błąd ModemManager. Sprawdź czy modem jest dostępny."
+
+msgid "No modem found. Please check ModemManager."
+msgstr "Nie znaleziono modemu. Sprawdź ModemManager."
+
+msgid "Please specify the code to send"
+msgstr "Proszę określić kod do wysłania"
+
+msgid "Please set the modem for communication"
+msgstr "Proszę ustawić modem do komunikacji"
+
+msgid "User interface for sending USSD codes using ModemManager."
+msgstr "Interfejs użytkownika do wysyłania kodów USSD przy użyciu ModemManager-a."
+
+msgid "USSD Codes"
+msgstr "Kody USSD"
+
+msgid "User USSD codes"
+msgstr "Zdefiniowane kody USSD"
+
+msgid "Code to send"
+msgstr "Kod do wysłania"
+
+msgid "Press [Enter] to send the code, press [Delete] to delete the code"
+msgstr "Naciśnij [Enter] aby wysłać kod, naciśnij [Delete] aby usunąć kod"
+
+msgid "Check this option if you need to use the menu built on USSD codes"
+msgstr "Zaznacz tą opcję jeśli potrzebujesz skorzystać z menu zbudowanego na kodach USSD"
+
+msgid "Keep the previous reply when sending a new USSD code."
+msgstr "Zachowaj poprzednią odpowiedź podczas wysyłania nowego kodu USSD."
+
+msgid "View new reply from top"
+msgstr "Wyświetlaj nową odpowiedź od góry"
+
+msgid "Turn over the replies."
+msgstr "Odwróć kolejność odpowiedzi."
+
+msgid "Clear form"
+msgstr "Wyczyść formularz"
+
+msgid "Send code"
+msgstr "Wyślij kod"
+
+msgid "Reply"
+msgstr "Odpowiedź"
+
+msgid ""
+msgstr ""
+
+msgid "The tab allows users to support the package."
+msgstr "Zakładka pozwala użytkownikom na wsparcie pakietu."
+
+msgid "Package update and support"
+msgstr "Aktualizacja i wsparcie pakietu"
+
+msgid "Luci-app-sms-manager Info"
+msgstr "Informacje o Luci-app-sms-manager"
+
+msgid "Luci-app-sms-manager"
+msgstr "Luci-app-sms-manager"
+
+msgid "Buy a coffee"
+msgstr "Postaw kawę"
+
+msgid "Buy a coffee if you want to support the development of the project and the author"
+msgstr "Postaw kawę jeśli chcesz wesprzeć rozwój projektu i autora"
+
+msgid "Become a sponsor"
+msgstr "Zostań sponsorem"
+
+msgid "Become a sponsor if you want to support the development of the project and the author"
+msgstr "Zostań sponsorem jeśli chcesz wesprzeć rozwój projektu i autora"
+
+msgid "Write on forum"
+msgstr "Napisz na forum"
+
+msgid "Write in the topic of the package on the forum eko.one.pl"
+msgstr "Napisz w temacie pakietu na forum eko.one.pl"
+
+msgid "Open discussion"
+msgstr "Otwórz dyskusję"
+
+msgid "Open a package discussion on Github"
+msgstr "Otwórz dyskusję o pakiecie na Github"
+
+msgid "Report a bug"
+msgstr "Zgłoś błąd"
+
+msgid "Report a bug on the package Github page"
+msgstr "Zgłoś błąd na stronie pakietu na Github"
+
+msgid "Package name"
+msgstr "Nazwa pakietu"
+
+msgid "Author (package maintainer)"
+msgstr "Autor (opiekun pakietu)"
+
+msgid "Information about package author and available support options."
+msgstr "Informacje o autorze pakietu i dostępnych opcjach wsparcia."
+
+msgid ""
+msgstr ""
+
+msgid "Configuration SMS Manager"
+msgstr "Konfiguracja Menedżera SMS"
+
+msgid "Configuration panel for SMS Manager application."
+msgstr "Panel konfiguracyjny aplikacji Menedżer SMS."
+
+msgid "SMS Settings"
+msgstr "Ustawienia SMS"
+
+msgid "SMS reading modem"
+msgstr "Modem do odczytu SMS"
+
+msgid "Select one of the available modems from ModemManager."
+msgstr "Wybierz jeden z dostępnych modemów z ModemManager-a."
+
+msgid "Please select a modem"
+msgstr "Proszę wybrać modem"
+
+msgid "Phone number to be blurred"
+msgstr "Numer telefonu do zamazania"
+
+msgid "The last 5 digits of this number will be blurred."
+msgstr "Ostatnie 5 cyfr tego numeru zostanie zamazane."
+
+msgid "Explanation of number and prefix"
+msgstr "Wyjaśnienie numeru i prefiksu"
+
+msgid "In the tab for sending SMSes, show an explanation of the prefix and the correct phone number."
+msgstr "W zakładce wysyłania SMS-ów pokaż wyjaśnienie prefiksu i prawidłowego numeru telefonu."
+
+msgid "Save messages to a text file"
+msgstr "Zapisz wiadomości do pliku tekstowego"
+
+msgid "This option allows to backup SMS messages or, for example, save messages that are not supported by ModemManager."
+msgstr "Ta opcja pozwala na utworzenie kopii zapasowej wiadomości SMS lub na przykład zapisanie wiadomości, które nie są obsługiwane przez ModemManager."
+
+msgid "Save as .txt file"
+msgstr "Zapisz jako plik .txt"
+
+msgid "Please configure SMS reading modem first"
+msgstr "Proszę najpierw skonfigurować modem do odczytu SMS"
+
+msgid "No SMS messages found on modem"
+msgstr "Nie znaleziono wiadomości SMS na modemie"
+
+msgid "No SMS messages found"
+msgstr "Nie znaleziono wiadomości SMS"
+
+msgid "Saved %d message(s) to file: %s"
+msgstr "Zapisano %d wiadomość(ci) do pliku: %s"
+
+msgid "All messages saved successfully."
+msgstr "Wszystkie wiadomości zostały pomyślnie zapisane."
+
+msgid "Delete all messages from modem"
+msgstr "Usuń wszystkie wiadomości z modemu"
+
+msgid "This will permanently delete all %d message(s) from the modem memory. This operation cannot be undone. Continue?"
+msgstr "Akcja spowoduje trwałe usunięcie wszystkich %d wiadomości z pamięci modemu. Tej operacji nie można cofnąć. Kontynuować?"
+
+msgid "Yes, delete all messages"
+msgstr "Tak, usuń wszystkie wiadomości"
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "All messages deleted successfully"
+msgstr "Wszystkie wiadomości zostały pomyślnie usunięte"
+
+msgid "Error deleting messages: "
+msgstr "Błąd podczas usuwania wiadomości: "
+
+msgid "SMS sending modem"
+msgstr "Modem do wysyłania SMS"
+
+msgid "Phone number prefix"
+msgstr "Prefiks numeru telefonu"
+
+msgid "Country prefix for phone numbers (for Poland it is +48)."
+msgstr "Prefiks kraju dla numerów telefonów (dla Polski to +48)."
+
+msgid "Expected format: +decimal value or decimal value"
+msgstr "Oczekiwany format: +wartość dziesiętna lub wartość dziesiętna"
+
+msgid "Add prefix to phone number"
+msgstr "Dodaj prefiks do numeru telefonu"
+
+msgid "Automatically add prefix to the phone number field."
+msgstr "Automatycznie dodaj prefiks do pola numeru telefonu."
+
+msgid "Enable group messaging"
+msgstr "Włącz wysyłanie grupowe"
+
+msgid "This option allows you to send one message to all contacts in the user's contact list."
+msgstr "Ta opcja pozwala na wysłanie jednej wiadomości do wszystkich kontaktów z listy kontaktów użytkownika."
+
+msgid "User contacts"
+msgstr "Kontakty użytkownika"
+
+msgid "Each line must have the following format: 'Contact name;phone number'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_phonebook.user</code>."
+msgstr "Każda linia musi mieć następujący format: 'Nazwa kontaktu;numer telefonu'. Dla wygody użytkownika plik jest zapisywany w lokalizacji <code>/etc/modem/sms_manager_phonebook.user</code>."
+
+msgid "USSD Codes Settings"
+msgstr "Ustawienia kodów USSD"
+
+msgid "USSD sending modem"
+msgstr "Modem do wysyłania USSD"
+
+msgid "Please select a modem"
+msgstr "Proszę wybrać modem"
+
+msgid "User USSD codes"
+msgstr "Zdefiniowane kody USSD"
+
+msgid "Each line must have the following format: 'Code description;code'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_ussdcodes.user</code>."
+msgstr "Każda linia musi mieć następujący format: 'Opis kodu;kod'. Dla wygody użytkownika plik jest zapisywany w lokalizacji <code>/etc/modem/sms_manager_ussdcodes.user</code>."
+
+msgid "AT Commands Settings"
+msgstr "Ustawienia poleceń AT"
+
+msgid "AT commands sending modem"
+msgstr "Modem do wysyłania poleceń AT"
+
+msgid "Select one of the available modems from ModemManager. <br /><br /><b>Important</b> <br />Sending AT commands via ModemManager requires the AT command interface to be compiled in. This functionality is not available in the standard ModemManager package and requires custom compilation with AT command support enabled."
+msgstr "Wybierz jeden z dostępnych modemów z ModemManager-a. <br /><br /><b>Ważne</b> <br />Wysyłanie poleceń AT przez ModemManager wymaga skompilowania interfejsu poleceń AT. Ta funkcjonalność nie jest dostępna w standardowym pakiecie ModemManager i wymaga niestandardowej kompilacji z włączoną obsługą poleceń AT."
+
+msgid "User AT commands"
+msgstr "Zdefiniowane polecenia AT"
+
+msgid "Each line must have the following format: 'At command description;AT command'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_atcmmds.user</code>."
+msgstr "Każda linia musi mieć następujący format: 'Opis polecenia AT;Polecenie AT'. Dla wygody użytkownika plik jest zapisywany w lokalizacji <code>/etc/modem/sms_manager_atcmmds.user</code>."
+
+msgid "Notification Settings"
+msgstr "Ustawienia powiadomień"
+
+msgid "Notify new messages"
+msgstr "Powiadamiaj o nowych wiadomościach"
+
+msgid "The LED informs about a new message. Before activating this function, please config and save the SMS reading modem, time to check SMS inbox and select the notification LED."
+msgstr "Dioda LED informuje o nowej wiadomości. Przed aktywacją tej funkcji skonfiguruj i zapisz modem dla odczytu SMS, czas sprawdzania skrzynki odbiorczej SMS i wybierz diodę LED powiadomień."
+
+msgid "Please configure SMS reading modem first"
+msgstr "Proszę najpierw skonfigurować modem do odczytu SMS"
+
+msgid "Check inbox every minute(s)"
+msgstr "Sprawdzaj skrzynkę odbiorczą co minutę/minut"
+
+msgid "Specify how many minutes you want your inbox to be checked."
+msgstr "Określ co ile minut chcesz aby sprawdzana była Twoja skrzynka odbiorcza."
+
+msgid "Expect a decimal value between five and fifty-nine"
+msgstr "Oczekiwana wartość dziesiętna między pięć a pięćdziesiąt dziewięć"
+
+msgid "Restart the inbox checking process every"
+msgstr "Restartuj proces sprawdzania skrzynki co"
+
+msgid "The process will restart at the selected time interval. This will eliminate the delay in checking your inbox."
+msgstr "Proces zostanie zrestartowany w wybranym interwale czasowym. Pozwoli to wyeliminować opóźnienie w sprawdzaniu skrzynki odbiorczej."
+
+msgid "4h"
+msgstr "4h"
+
+msgid "6h"
+msgstr "6h"
+
+msgid "8h"
+msgstr "8h"
+
+msgid "12h"
+msgstr "12h"
+
+msgid "The diode is dedicated only to these notifications"
+msgstr "Dioda jest dedykowana tylko do tych powiadomień"
+
+msgid "Select 'No' in case the router has only one LED or if the LED is multi-tasking. <br /><br /><b>Important</b> <br />This option requires LED to be defined in the system (if possible) to work properly. This requirement applies when the diode supports multiple tasks."
+msgstr "Wybierz 'Nie' jeśli router ma tylko jedną diodę LED lub jeśli dioda LED ma wiele zadań. <br /><br /><b>Ważne</b> <br />Ta opcja wymaga zdefiniowania diody LED w systemie (jeśli to możliwe) aby działać prawidłowo. Ten wymóg dotyczy przypadku gdy dioda obsługuje wiele zadań."
+
+msgid "No"
+msgstr "Nie"
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Name"
+msgstr "Nazwa <abbr title=\"Light Emitting Diode\">LED</abbr>"
+
+msgid "Select the notification LED."
+msgstr "Wybierz diodę LED powiadomień."
