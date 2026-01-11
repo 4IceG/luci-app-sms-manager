@@ -12,8 +12,8 @@ PKG_MAINTAINER:=Rafał Wabik <4Rafal@gmail.com>
 LUCI_DESCRIPTION:=LuCI JS interface for the SMS via ModemManager. The user interface supports SMS / USSD Codes / AT Commands.
 LUCI_PKGARCH:=all
 LUCI_DEPENDS:=+modemmanager +luci-proto-modemmanager
-PKG_VERSION:=1.0.5
-PKG_RELEASE:=20260110
+PKG_VERSION:=1.0.6
+PKG_RELEASE:=20260111
 
 define Package/luci-app-sms-manager/conffiles
 /etc/config/sms_manager

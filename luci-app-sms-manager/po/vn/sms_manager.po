@@ -1,0 +1,494 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "SMS Manager"
+msgstr "Trình quản lý SMS"
+
+msgid "Please select the message(s) to be deleted"
+msgstr "Vui lòng chọn tin nhắn cần xóa"
+
+msgid "Delete all the messages?"
+msgstr "Xóa tất cả tin nhắn?"
+
+msgid "Delete selected message(s)?"
+msgstr "Xóa tin nhắn đã chọn?"
+
+msgid "Please set the modem for communication"
+msgstr "Vui lòng thiết lập modem để giao tiếp"
+
+msgid "No valid SMS IDs found"
+msgstr "Không tìm thấy ID SMS hợp lệ"
+
+msgid "Message(s) deleted successfully"
+msgstr "Đã xóa tin nhắn thành công"
+
+msgid "Error deleting messages: "
+msgstr "Lỗi khi xóa tin nhắn: "
+
+msgid "Sender"
+msgstr "Người gửi"
+
+msgid "Received"
+msgstr "Đã nhận"
+
+msgid "Message"
+msgstr "Tin nhắn"
+
+msgid "Please configure the SMS reading modem first"
+msgstr "Vui lòng cấu hình modem đọc SMS trước"
+
+msgid "No SMS messages found"
+msgstr "Không tìm thấy tin nhắn SMS"
+
+msgid "Error loading SMS details: "
+msgstr "Lỗi khi tải chi tiết SMS: "
+
+msgid "Error listing SMS: "
+msgstr "Lỗi khi liệt kê SMS: "
+
+msgid "SMS Messages"
+msgstr "Tin nhắn SMS"
+
+msgid "User interface for reading messages using ModemManager."
+msgstr "Giao diện người dùng để đọc tin nhắn bằng ModemManager."
+
+msgid "Received Messages"
+msgstr "Tin nhắn đã nhận"
+
+msgid "Message storage area"
+msgstr "Khu vực lưu trữ tin nhắn"
+
+msgid "SM / ME (Automatic selection)"
+msgstr "SM / ME (Tự động chọn)"
+
+msgid "Storage SM / ME used"
+msgstr "Bộ nhớ SM / ME đã sử dụng"
+
+msgid "Loading..."
+msgstr "Đang tải..."
+
+msgid "Delete message(s)"
+msgstr "Xóa tin nhắn"
+
+msgid "Refresh"
+msgstr "Làm mới"
+
+msgid ""
+msgstr ""
+
+msgid "Please specify the command to send"
+msgstr "Vui lòng chỉ định lệnh cần gửi"
+
+msgid "Please set the modem for communication"
+msgstr "Vui lòng thiết lập modem để giao tiếp"
+
+msgid "User interface for sending AT commands using ModemManager."
+msgstr "Giao diện người dùng để gửi lệnh AT bằng ModemManager."
+
+msgid "AT Commands"
+msgstr "Lệnh AT"
+
+msgid "User AT commands"
+msgstr "Lệnh AT tùy chỉnh"
+
+msgid "Command to send"
+msgstr "Lệnh cần gửi"
+
+msgid "Press [Enter] to send the command, press [Delete] to delete the command"
+msgstr "Nhấn [Enter] để gửi lệnh, nhấn [Delete] để xóa lệnh"
+
+msgid "Clear form"
+msgstr "Xóa biểu mẫu"
+
+msgid "Send command"
+msgstr "Gửi lệnh"
+
+msgid "Reply"
+msgstr "Trả lời"
+
+msgid ""
+msgstr ""
+
+msgid "Please specify the phone number to which you want to send the message"
+msgstr "Vui lòng chỉ định số điện thoại mà bạn muốn gửi tin nhắn"
+
+msgid "Please specify the message you want to send"
+msgstr "Vui lòng chỉ định tin nhắn bạn muốn gửi"
+
+msgid "Please set the modem for communication"
+msgstr "Vui lòng thiết lập modem để giao tiếp"
+
+msgid "Please specify phone number"
+msgstr "Vui lòng chỉ định số điện thoại"
+
+msgid "SMS sent successfully to"
+msgstr "Đã gửi SMS thành công tới"
+
+msgid "Failed to send SMS to"
+msgstr "Không thể gửi SMS tới"
+
+msgid "Failed to create SMS"
+msgstr "Không thể tạo SMS"
+
+msgid "Error creating SMS: "
+msgstr "Lỗi khi tạo SMS: "
+
+msgid "The phone number should be preceded by the country prefix (for Poland it is +48)."
+msgstr "Số điện thoại phải được đặt trước mã quốc gia (đối với Việt Nam là +84)."
+
+msgid "User interface for sending messages using ModemManager."
+msgstr "Giao diện người dùng để gửi tin nhắn bằng ModemManager."
+
+msgid "SMS Messages"
+msgstr "Tin nhắn SMS"
+
+msgid "User contacts"
+msgstr "Danh bạ người dùng"
+
+msgid "Send to"
+msgstr "Gửi tới"
+
+msgid "Press [Delete] to delete the phone number"
+msgstr "Nhấn [Delete] để xóa số điện thoại"
+
+msgid "Encoding standard"
+msgstr "Tiêu chuẩn mã hóa"
+
+msgid "GSM-7 encoding (160 characters)"
+msgstr "Mã hóa GSM-7 (160 ký tự)"
+
+msgid "GSM-7 (160 characters)"
+msgstr "GSM-7 (160 ký tự)"
+
+msgid "Unicode encoding (70 characters)"
+msgstr "Mã hóa Unicode (70 ký tự)"
+
+msgid "Unicode (70 characters)"
+msgstr "Unicode (70 ký tự)"
+
+msgid "Message text"
+msgstr "Nội dung tin nhắn"
+
+msgid "Press [Delete] to delete the content of the message"
+msgstr "Nhấn [Delete] để xóa nội dung tin nhắn"
+
+msgid "Characters remaining:"
+msgstr "Ký tự còn lại:"
+
+msgid "160"
+msgstr "160"
+
+msgid "Clear form"
+msgstr "Xóa biểu mẫu"
+
+msgid "Send"
+msgstr "Gửi"
+
+msgid "to number"
+msgstr "tới số"
+
+msgid "to group"
+msgstr "tới nhóm"
+
+msgid "Send to number"
+msgstr "Gửi tới số"
+
+msgid "Status"
+msgstr "Trạng thái"
+
+msgid ""
+msgstr ""
+
+msgid "Error sending USSD code. Please check modem status."
+msgstr "Lỗi gửi mã USSD. Vui lòng kiểm tra trạng thái modem."
+
+msgid "ModemManager error. Please check if modem is available."
+msgstr "Lỗi ModemManager. Vui lòng kiểm tra xem modem có khả dụng không."
+
+msgid "No modem found. Please check ModemManager."
+msgstr "Không tìm thấy modem. Vui lòng kiểm tra ModemManager."
+
+msgid "Please specify the code to send"
+msgstr "Vui lòng chỉ định mã cần gửi"
+
+msgid "Please set the modem for communication"
+msgstr "Vui lòng thiết lập modem để giao tiếp"
+
+msgid "User interface for sending USSD codes using ModemManager."
+msgstr "Giao diện người dùng để gửi mã USSD bằng ModemManager."
+
+msgid "USSD Codes"
+msgstr "Mã USSD"
+
+msgid "User USSD codes"
+msgstr "Mã USSD tùy chỉnh"
+
+msgid "Code to send"
+msgstr "Mã cần gửi"
+
+msgid "Press [Enter] to send the code, press [Delete] to delete the code"
+msgstr "Nhấn [Enter] để gửi mã, nhấn [Delete] để xóa mã"
+
+msgid "Check this option if you need to use the menu built on USSD codes"
+msgstr "Đánh dấu tùy chọn này nếu bạn cần sử dụng menu được xây dựng trên mã USSD"
+
+msgid "Keep the previous reply when sending a new USSD code."
+msgstr "Giữ phản hồi trước đó khi gửi mã USSD mới."
+
+msgid "View new reply from top"
+msgstr "Xem phản hồi mới từ trên xuống"
+
+msgid "Turn over the replies."
+msgstr "Đảo ngược các phản hồi."
+
+msgid "Clear form"
+msgstr "Xóa biểu mẫu"
+
+msgid "Send code"
+msgstr "Gửi mã"
+
+msgid "Reply"
+msgstr "Trả lời"
+
+msgid ""
+msgstr ""
+
+msgid "The tab allows users to support the package."
+msgstr "Tab này cho phép người dùng hỗ trợ gói."
+
+msgid "Package update and support"
+msgstr "Cập nhật và hỗ trợ gói"
+
+msgid "Luci-app-sms-manager Info"
+msgstr "Thông tin Luci-app-sms-manager"
+
+msgid "Luci-app-sms-manager"
+msgstr "Luci-app-sms-manager"
+
+msgid "Buy a coffee"
+msgstr "Mời một tách cà phê"
+
+msgid "Buy a coffee if you want to support the development of the project and the author"
+msgstr "Mời một tách cà phê nếu bạn muốn hỗ trợ phát triển dự án và tác giả"
+
+msgid "Become a sponsor"
+msgstr "Trở thành nhà tài trợ"
+
+msgid "Become a sponsor if you want to support the development of the project and the author"
+msgstr "Trở thành nhà tài trợ nếu bạn muốn hỗ trợ phát triển dự án và tác giả"
+
+msgid "Write on forum"
+msgstr "Viết trên diễn đàn"
+
+msgid "Write in the topic of the package on the forum eko.one.pl"
+msgstr "Viết trong chủ đề của gói trên diễn đàn eko.one.pl"
+
+msgid "Open discussion"
+msgstr "Mở thảo luận"
+
+msgid "Open a package discussion on Github"
+msgstr "Mở thảo luận về gói trên Github"
+
+msgid "Report a bug"
+msgstr "Báo cáo lỗi"
+
+msgid "Report a bug on the package Github page"
+msgstr "Báo cáo lỗi trên trang Github của gói"
+
+msgid "Package name"
+msgstr "Tên gói"
+
+msgid "Author (package maintainer)"
+msgstr "Tác giả (người bảo trì gói)"
+
+msgid "Information about package author and available support options."
+msgstr "Thông tin về tác giả gói và các tùy chọn hỗ trợ có sẵn."
+
+msgid ""
+msgstr ""
+
+msgid "Configuration SMS Manager"
+msgstr "Cấu hình Trình quản lý SMS"
+
+msgid "Configuration panel for SMS Manager application."
+msgstr "Bảng điều khiển cấu hình cho ứng dụng Trình quản lý SMS."
+
+msgid "SMS Settings"
+msgstr "Cài đặt SMS"
+
+msgid "SMS reading modem"
+msgstr "Modem đọc SMS"
+
+msgid "Select one of the available modems from ModemManager."
+msgstr "Chọn một trong các modem khả dụng từ ModemManager."
+
+msgid "Please select a modem"
+msgstr "Vui lòng chọn modem"
+
+msgid "Phone number to be blurred"
+msgstr "Số điện thoại cần che mờ"
+
+msgid "The last 5 digits of this number will be blurred."
+msgstr "5 chữ số cuối của số này sẽ bị che mờ."
+
+msgid "Explanation of number and prefix"
+msgstr "Giải thích về số và tiền tố"
+
+msgid "In the tab for sending SMSes, show an explanation of the prefix and the correct phone number."
+msgstr "Trong tab gửi SMS, hiển thị giải thích về tiền tố và số điện thoại chính xác."
+
+msgid "Save messages to a text file"
+msgstr "Lưu tin nhắn vào tệp văn bản"
+
+msgid "This option allows to backup SMS messages or, for example, save messages that are not supported by ModemManager."
+msgstr "Tùy chọn này cho phép sao lưu tin nhắn SMS hoặc ví dụ, lưu các tin nhắn không được ModemManager hỗ trợ."
+
+msgid "Save as .txt file"
+msgstr "Lưu dưới dạng tệp .txt"
+
+msgid "Please configure SMS reading modem first"
+msgstr "Vui lòng cấu hình modem đọc SMS trước"
+
+msgid "No SMS messages found on modem"
+msgstr "Không tìm thấy tin nhắn SMS trên modem"
+
+msgid "No SMS messages found"
+msgstr "Không tìm thấy tin nhắn SMS"
+
+msgid "Error saving file: "
+msgstr "Lỗi khi lưu tệp: "
+
+msgid "Saved messages successfully!"
+msgstr "Đã lưu tin nhắn thành công!"
+
+msgid "Delete all messages?"
+msgstr "Xóa tất cả tin nhắn?"
+
+msgid "Permanently delete all SMS"
+msgstr "Xóa vĩnh viễn tất cả SMS"
+
+msgid "This action will permanently delete all messages. Continue?"
+msgstr "Hành động này sẽ xóa vĩnh viễn tất cả tin nhắn. Tiếp tục?"
+
+msgid "Cancel"
+msgstr "Hủy"
+
+msgid "Delete"
+msgstr "Xóa"
+
+msgid "All messages deleted successfully"
+msgstr "Đã xóa tất cả tin nhắn thành công"
+
+msgid "Error deleting messages: "
+msgstr "Lỗi khi xóa tin nhắn: "
+
+msgid "SMS sending modem"
+msgstr "Modem gửi SMS"
+
+msgid "Phone number prefix"
+msgstr "Tiền tố số điện thoại"
+
+msgid "Country prefix for phone numbers (for Poland it is +48)."
+msgstr "Mã quốc gia cho số điện thoại (đối với Việt Nam là +84)."
+
+msgid "Expected format: +decimal value or decimal value"
+msgstr "Định dạng mong đợi: +giá trị thập phân hoặc giá trị thập phân"
+
+msgid "Add prefix to phone number"
+msgstr "Thêm tiền tố vào số điện thoại"
+
+msgid "Automatically add prefix to the phone number field."
+msgstr "Tự động thêm tiền tố vào trường số điện thoại."
+
+msgid "Enable group messaging"
+msgstr "Bật tin nhắn nhóm"
+
+msgid "This option allows you to send one message to all contacts in the user's contact list."
+msgstr "Tùy chọn này cho phép bạn gửi một tin nhắn tới tất cả các liên hệ trong danh bạ người dùng."
+
+msgid "User contacts"
+msgstr "Danh bạ người dùng"
+
+msgid "Each line must have the following format: 'Contact name;phone number'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_phonebook.user</code>."
+msgstr "Mỗi dòng phải có định dạng sau: 'Tên liên hệ;số điện thoại'. Để thuận tiện cho người dùng, tệp được lưu vào vị trí <code>/etc/modem/sms_manager_phonebook.user</code>."
+
+msgid "USSD Codes Settings"
+msgstr "Cài đặt mã USSD"
+
+msgid "USSD sending modem"
+msgstr "Modem gửi USSD"
+
+msgid "User USSD codes"
+msgstr "Mã USSD người dùng"
+
+msgid "Each line must have the following format: 'Code description;code'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_ussdcodes.user</code>."
+msgstr "Mỗi dòng phải có định dạng sau: 'Mô tả mã;mã'. Để thuận tiện cho người dùng, tệp được lưu vào vị trí <code>/etc/modem/sms_manager_ussdcodes.user</code>."
+
+msgid "AT Commands Settings"
+msgstr "Cài đặt lệnh AT"
+
+msgid "AT commands sending modem"
+msgstr "Modem gửi lệnh AT"
+
+msgid "Select one of the available modems from ModemManager. <br /><br /><b>Important</b> <br />Sending AT commands via ModemManager requires the AT command interface to be compiled in. This functionality is not available in the standard ModemManager package and requires custom compilation with AT command support enabled."
+msgstr "Chọn một trong các modem khả dụng từ ModemManager. <br /><br /><b>Quan trọng</b> <br />Gửi lệnh AT qua ModemManager yêu cầu giao diện lệnh AT được biên dịch. Chức năng này không có sẵn trong gói ModemManager tiêu chuẩn và yêu cầu biên dịch tùy chỉnh với hỗ trợ lệnh AT được bật."
+
+msgid "User AT commands"
+msgstr "Lệnh AT người dùng"
+
+msgid "Each line must have the following format: 'At command description;AT command'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_atcmmds.user</code>."
+msgstr "Mỗi dòng phải có định dạng sau: 'Mô tả lệnh AT;lệnh AT'. Để thuận tiện cho người dùng, tệp được lưu vào vị trí <code>/etc/modem/sms_manager_atcmmds.user</code>."
+
+msgid "Notification Settings"
+msgstr "Cài đặt thông báo"
+
+msgid "Notify new messages"
+msgstr "Thông báo tin nhắn mới"
+
+msgid "The LED informs about a new message. Before activating this function, please config and save the SMS reading modem, time to check SMS inbox and select the notification LED."
+msgstr "Đèn LED thông báo về tin nhắn mới. Trước khi kích hoạt chức năng này, vui lòng cấu hình và lưu modem đọc SMS, thời gian kiểm tra hộp thư đến SMS và chọn đèn LED thông báo."
+
+msgid "Check inbox every minute(s)"
+msgstr "Kiểm tra hộp thư đến mỗi phút"
+
+msgid "Specify how many minutes you want your inbox to be checked."
+msgstr "Chỉ định bao nhiêu phút bạn muốn hộp thư đến của mình được kiểm tra."
+
+msgid "Expect a decimal value between five and fifty-nine"
+msgstr "Mong đợi giá trị thập phân từ năm đến năm mươi chín"
+
+msgid "Restart the inbox checking process every"
+msgstr "Khởi động lại quá trình kiểm tra hộp thư đến mỗi"
+
+msgid "The process will restart at the selected time interval. This will eliminate the delay in checking your inbox."
+msgstr "Quá trình sẽ khởi động lại ở khoảng thời gian đã chọn. Điều này sẽ loại bỏ độ trễ khi kiểm tra hộp thư đến của bạn."
+
+msgid "4h"
+msgstr "4 giờ"
+
+msgid "6h"
+msgstr "6 giờ"
+
+msgid "8h"
+msgstr "8 giờ"
+
+msgid "12h"
+msgstr "12 giờ"
+
+msgid "The diode is dedicated only to these notifications"
+msgstr "Đèn LED chỉ dành riêng cho các thông báo này"
+
+msgid "Select 'No' in case the router has only one LED or if the LED is multi-tasking. <br /><br /><b>Important</b> <br />This option requires LED to be defined in the system (if possible) to work properly. This requirement applies when the diode supports multiple tasks."
+msgstr "Chọn 'Không' trong trường hợp bộ định tuyến chỉ có một đèn LED hoặc nếu đèn LED đa nhiệm. <br /><br /><b>Quan trọng</b> <br />Tùy chọn này yêu cầu đèn LED được định nghĩa trong hệ thống (nếu có thể) để hoạt động đúng. Yêu cầu này áp dụng khi đèn LED hỗ trợ nhiều tác vụ."
+
+msgid "No"
+msgstr "Không"
+
+msgid "Yes"
+msgstr "Có"
+
+msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Name"
+msgstr "Tên <abbr title=\"Diode phát quang\">LED</abbr>"
+
+msgid "Select the notification LED."
+msgstr "Chọn đèn LED thông báo."

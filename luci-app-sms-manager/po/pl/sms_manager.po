@@ -19,8 +19,8 @@ msgstr "Proszę ustawić modem do komunikacji"
 msgid "No valid SMS IDs found"
 msgstr "Nie znaleziono prawidłowych identyfikatorów SMS"
 
-msgid "Messages deleted successfully"
-msgstr "Wiadomości usunięte pomyślnie"
+msgid "Message(s) deleted successfully"
+msgstr "Wiadomość(-ci) została(-y) pomyślnie usunięta(-e)"
 
 msgid "Error deleting messages: "
 msgstr "Błąd podczas usuwania wiadomości: "
@@ -160,8 +160,8 @@ msgstr "Kodowanie GSM-7 (160 znaków)"
 msgid "GSM-7 (160 characters)"
 msgstr "GSM-7 (160 znaków)"
 
-msgid "Unicode encoding (70 characters), does not support sending national characters (in utf8) - only ascii"
-msgstr "Kodowanie Unicode (70 znaków), nie obsługuje wysyłania znaków narodowych (w utf8) - tylko ascii"
+msgid "Unicode encoding (70 characters)"
+msgstr "Kodowanie Unicode (70 znaków)"
 
 msgid "Unicode (70 characters)"
 msgstr "Unicode (70 znaków)"
@@ -203,10 +203,10 @@ msgid "Error sending USSD code. Please check modem status."
 msgstr "Błąd wysyłania kodu USSD. Sprawdź status modemu."
 
 msgid "ModemManager error. Please check if modem is available."
-msgstr "Błąd ModemManager. Sprawdź czy modem jest dostępny."
+msgstr "Błąd ModemManager-a. Sprawdź czy modem jest dostępny."
 
 msgid "No modem found. Please check ModemManager."
-msgstr "Nie znaleziono modemu. Sprawdź ModemManager."
+msgstr "Nie znaleziono modemu. Sprawdź ModemManager-a."
 
 msgid "Please specify the code to send"
 msgstr "Proszę określić kod do wysłania"
@@ -311,7 +311,7 @@ msgid "Configuration SMS Manager"
 msgstr "Konfiguracja Menedżera SMS"
 
 msgid "Configuration panel for SMS Manager application."
-msgstr "Panel konfiguracyjny aplikacji Menedżer SMS."
+msgstr "Panel konfiguracji aplikacji Menedżer SMS."
 
 msgid "SMS Settings"
 msgstr "Ustawienia SMS"
@@ -320,28 +320,28 @@ msgid "SMS reading modem"
 msgstr "Modem do odczytu SMS"
 
 msgid "Select one of the available modems from ModemManager."
-msgstr "Wybierz jeden z dostępnych modemów z ModemManager-a."
+msgstr "Wybierz jeden z dostępnych modemów z ModemManagera."
 
 msgid "Please select a modem"
 msgstr "Proszę wybrać modem"
 
 msgid "Phone number to be blurred"
-msgstr "Numer telefonu do zamazania"
+msgstr "Numer telefonu do ukrycia"
 
 msgid "The last 5 digits of this number will be blurred."
-msgstr "Ostatnie 5 cyfr tego numeru zostanie zamazane."
+msgstr "Ostatnie 5 cyfr tego numeru zostanie ukrytych."
 
 msgid "Explanation of number and prefix"
-msgstr "Wyjaśnienie numeru i prefiksu"
+msgstr "Objaśnienie numeru i prefiksu"
 
 msgid "In the tab for sending SMSes, show an explanation of the prefix and the correct phone number."
-msgstr "W zakładce wysyłania SMS-ów pokaż wyjaśnienie prefiksu i prawidłowego numeru telefonu."
+msgstr "W zakładce wysyłania SMS-ów pokaż objaśnienie prefiksu i poprawnego numeru telefonu."
 
 msgid "Save messages to a text file"
 msgstr "Zapisz wiadomości do pliku tekstowego"
 
 msgid "This option allows to backup SMS messages or, for example, save messages that are not supported by ModemManager."
-msgstr "Ta opcja pozwala na utworzenie kopii zapasowej wiadomości SMS lub na przykład zapisanie wiadomości, które nie są obsługiwane przez ModemManager."
+msgstr "Ta opcja umożliwia utworzenie kopii zapasowej wiadomości SMS lub np. zapisanie wiadomości, które nie są obsługiwane przez ModemManager-a."
 
 msgid "Save as .txt file"
 msgstr "Zapisz jako plik .txt"
@@ -355,29 +355,32 @@ msgstr "Nie znaleziono wiadomości SMS na modemie"
 msgid "No SMS messages found"
 msgstr "Nie znaleziono wiadomości SMS"
 
-msgid "Saved %d message(s) to file: %s"
-msgstr "Zapisano %d wiadomość(ci) do pliku: %s"
+msgid "Error saving file: "
+msgstr "Błąd zapisu pliku: "
 
-msgid "All messages saved successfully."
-msgstr "Wszystkie wiadomości zostały pomyślnie zapisane."
+msgid "Saved messages successfully!"
+msgstr "Pomyślnie zapisano wiadomości!"
 
-msgid "Delete all messages from modem"
-msgstr "Usuń wszystkie wiadomości z modemu"
+msgid "Delete all messages?"
+msgstr "Usunąć wszystkie wiadomości?"
 
-msgid "This will permanently delete all %d message(s) from the modem memory. This operation cannot be undone. Continue?"
-msgstr "Akcja spowoduje trwałe usunięcie wszystkich %d wiadomości z pamięci modemu. Tej operacji nie można cofnąć. Kontynuować?"
+msgid "Permanently delete all SMS"
+msgstr "Trwale usunąć wszystkie SMS"
 
-msgid "Yes, delete all messages"
-msgstr "Tak, usuń wszystkie wiadomości"
+msgid "This action will permanently delete all messages. Continue?"
+msgstr "Ta akcja trwale usunie wszystkie wiadomości. Kontynuować?"
 
 msgid "Cancel"
 msgstr "Anuluj"
+
+msgid "Delete"
+msgstr "Usuń"
 
 msgid "All messages deleted successfully"
 msgstr "Wszystkie wiadomości zostały pomyślnie usunięte"
 
 msgid "Error deleting messages: "
-msgstr "Błąd podczas usuwania wiadomości: "
+msgstr "Błąd usuwania wiadomości: "
 
 msgid "SMS sending modem"
 msgstr "Modem do wysyłania SMS"
@@ -401,7 +404,7 @@ msgid "Enable group messaging"
 msgstr "Włącz wysyłanie grupowe"
 
 msgid "This option allows you to send one message to all contacts in the user's contact list."
-msgstr "Ta opcja pozwala na wysłanie jednej wiadomości do wszystkich kontaktów z listy kontaktów użytkownika."
+msgstr "Ta opcja umożliwia wysłanie jednej wiadomości do wszystkich kontaktów z listy kontaktów użytkownika."
 
 msgid "User contacts"
 msgstr "Kontakty użytkownika"
@@ -415,11 +418,8 @@ msgstr "Ustawienia kodów USSD"
 msgid "USSD sending modem"
 msgstr "Modem do wysyłania USSD"
 
-msgid "Please select a modem"
-msgstr "Proszę wybrać modem"
-
 msgid "User USSD codes"
-msgstr "Zdefiniowane kody USSD"
+msgstr "Kody USSD użytkownika"
 
 msgid "Each line must have the following format: 'Code description;code'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_ussdcodes.user</code>."
 msgstr "Każda linia musi mieć następujący format: 'Opis kodu;kod'. Dla wygody użytkownika plik jest zapisywany w lokalizacji <code>/etc/modem/sms_manager_ussdcodes.user</code>."
@@ -431,13 +431,13 @@ msgid "AT commands sending modem"
 msgstr "Modem do wysyłania poleceń AT"
 
 msgid "Select one of the available modems from ModemManager. <br /><br /><b>Important</b> <br />Sending AT commands via ModemManager requires the AT command interface to be compiled in. This functionality is not available in the standard ModemManager package and requires custom compilation with AT command support enabled."
-msgstr "Wybierz jeden z dostępnych modemów z ModemManager-a. <br /><br /><b>Ważne</b> <br />Wysyłanie poleceń AT przez ModemManager wymaga skompilowania interfejsu poleceń AT. Ta funkcjonalność nie jest dostępna w standardowym pakiecie ModemManager i wymaga niestandardowej kompilacji z włączoną obsługą poleceń AT."
+msgstr "Wybierz jeden z dostępnych modemów z ModemManagera. <br /><br /><b>Ważne</b> <br />Wysyłanie poleceń AT przez ModemManager-a wymaga skompilowanego interfejsu poleceń AT. Ta funkcjonalność nie jest dostępna w standardowym pakiecie ModemManager i wymaga niestandardowej kompilacji z włączoną obsługą poleceń AT."
 
 msgid "User AT commands"
-msgstr "Zdefiniowane polecenia AT"
+msgstr "Polecenia AT użytkownika"
 
 msgid "Each line must have the following format: 'At command description;AT command'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_atcmmds.user</code>."
-msgstr "Każda linia musi mieć następujący format: 'Opis polecenia AT;Polecenie AT'. Dla wygody użytkownika plik jest zapisywany w lokalizacji <code>/etc/modem/sms_manager_atcmmds.user</code>."
+msgstr "Każda linia musi mieć następujący format: 'Opis polecenia AT;polecenie AT'. Dla wygody użytkownika plik jest zapisywany w lokalizacji <code>/etc/modem/sms_manager_atcmmds.user</code>."
 
 msgid "Notification Settings"
 msgstr "Ustawienia powiadomień"
@@ -446,16 +446,13 @@ msgid "Notify new messages"
 msgstr "Powiadamiaj o nowych wiadomościach"
 
 msgid "The LED informs about a new message. Before activating this function, please config and save the SMS reading modem, time to check SMS inbox and select the notification LED."
-msgstr "Dioda LED informuje o nowej wiadomości. Przed aktywacją tej funkcji skonfiguruj i zapisz modem dla odczytu SMS, czas sprawdzania skrzynki odbiorczej SMS i wybierz diodę LED powiadomień."
-
-msgid "Please configure SMS reading modem first"
-msgstr "Proszę najpierw skonfigurować modem do odczytu SMS"
+msgstr "Dioda LED informuje o nowej wiadomości. Przed aktywacją tej funkcji proszę skonfigurować i zapisać modem do odczytu SMS, czas sprawdzania skrzynki odbiorczej SMS oraz wybrać diodę powiadomień."
 
 msgid "Check inbox every minute(s)"
-msgstr "Sprawdzaj skrzynkę odbiorczą co minutę/minut"
+msgstr "Sprawdzaj skrzynkę co minutę(-y)"
 
 msgid "Specify how many minutes you want your inbox to be checked."
-msgstr "Określ co ile minut chcesz aby sprawdzana była Twoja skrzynka odbiorcza."
+msgstr "Określ co ile minut ma być sprawdzana skrzynka odbiorcza."
 
 msgid "Expect a decimal value between five and fifty-nine"
 msgstr "Oczekiwana wartość dziesiętna między pięć a pięćdziesiąt dziewięć"
@@ -464,25 +461,25 @@ msgid "Restart the inbox checking process every"
 msgstr "Restartuj proces sprawdzania skrzynki co"
 
 msgid "The process will restart at the selected time interval. This will eliminate the delay in checking your inbox."
-msgstr "Proces zostanie zrestartowany w wybranym interwale czasowym. Pozwoli to wyeliminować opóźnienie w sprawdzaniu skrzynki odbiorczej."
+msgstr "Proces zostanie uruchomiony ponownie w wybranym przedziale czasowym. To wyeliminuje opóźnienie w sprawdzaniu skrzynki odbiorczej."
 
 msgid "4h"
-msgstr "4h"
+msgstr "4 godz."
 
 msgid "6h"
-msgstr "6h"
+msgstr "6 godz."
 
 msgid "8h"
-msgstr "8h"
+msgstr "8 godz."
 
 msgid "12h"
-msgstr "12h"
+msgstr "12 godz."
 
 msgid "The diode is dedicated only to these notifications"
-msgstr "Dioda jest dedykowana tylko do tych powiadomień"
+msgstr "Dioda przeznaczona tylko do tych powiadomień"
 
 msgid "Select 'No' in case the router has only one LED or if the LED is multi-tasking. <br /><br /><b>Important</b> <br />This option requires LED to be defined in the system (if possible) to work properly. This requirement applies when the diode supports multiple tasks."
-msgstr "Wybierz 'Nie' jeśli router ma tylko jedną diodę LED lub jeśli dioda LED ma wiele zadań. <br /><br /><b>Ważne</b> <br />Ta opcja wymaga zdefiniowania diody LED w systemie (jeśli to możliwe) aby działać prawidłowo. Ten wymóg dotyczy przypadku gdy dioda obsługuje wiele zadań."
+msgstr "Wybierz 'Nie', jeśli router ma tylko jedną diodę LED lub jeśli dioda jest wielozadaniowa. <br /><br /><b>Ważne</b> <br />Ta opcja wymaga, aby dioda LED była zdefiniowana w systemie (jeśli to możliwe), aby działać prawidłowo. Ten wymóg dotyczy sytuacji, gdy dioda obsługuje wiele zadań."
 
 msgid "No"
 msgstr "Nie"
@@ -491,7 +488,7 @@ msgid "Yes"
 msgstr "Tak"
 
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Name"
-msgstr "Nazwa <abbr title=\"Light Emitting Diode\">LED</abbr>"
+msgstr "Nazwa <abbr title=\"Dioda elektroluminescencyjna\">LED</abbr>"
 
 msgid "Select the notification LED."
-msgstr "Wybierz diodę LED powiadomień."
+msgstr "Wybierz diodę powiadomień."

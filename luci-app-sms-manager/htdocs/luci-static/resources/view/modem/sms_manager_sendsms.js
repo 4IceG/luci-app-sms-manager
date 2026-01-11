@@ -542,7 +542,7 @@ return view.extend({
 									]),
 									' \u00a0\u00a0\u00a0 ',
 									E('label', {
-										'data-tooltip': _('Unicode encoding (70 characters), does not support sending national characters (in utf8) - only ascii')
+										'data-tooltip': _('Unicode encoding (70 characters)')
 									}, [
 										E('input', {
 											'type': 'radio',

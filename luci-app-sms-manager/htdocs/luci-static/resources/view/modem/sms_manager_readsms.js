@@ -15,6 +15,72 @@
 
 return view.extend({
 	load: function() {
+		document.head.append(E('style', {'type': 'text/css'},
+		`
+		#smsTable {
+			width: 100%;
+			border: 1px solid var(--border-color-medium) !important;
+			border-collapse: collapse;
+		}
+		
+		#smsTable th, #smsTable td {
+			padding: 10px;
+			vertical-align: top !important;
+		}
+		
+		#smsTable th {
+			text-align: left !important;
+			border-top: 1px solid var(--border-color-medium) !important;
+			border-bottom: 1px solid var(--border-color-medium) !important;
+		}
+		
+		#smsTable td {
+			border-bottom: 1px solid var(--border-color-medium) !important;
+		}
+		
+		#smsTable td input[type="checkbox"] {
+			float: left !important;
+			margin: 0 auto !important;
+			width: 17px !important;
+		}
+		
+		#smsTable .message {
+			text-align: justify !important;
+			word-break: break-word;
+		}
+		
+		@media screen and (min-width: 769px) {
+			#smsTable .checker {
+				width: 7%;
+			}
+			#smsTable .from {
+				width: 11%;
+			}
+			#smsTable .received {
+				width: 15%;
+			}
+			#smsTable .message {
+				width: 67%;
+			}
+		}
+		
+		/* tablet */
+		@media screen and (max-width: 768px) and (min-width: 481px) {
+			#smsTable .checker {
+				width: 10%;
+			}
+			#smsTable .from {
+				width: 25%;
+			}
+			#smsTable .received {
+				width: 25%;
+			}
+			#smsTable .message {
+				width: 40%;
+			}
+		}
+		`));
+		
 		return uci.load('sms_manager');
 	},
 
@@ -78,16 +144,16 @@ return view.extend({
 					return uci.load('sms_manager').then(function() {
 						try {
 							uci.set('sms_manager', '@sms_manager[0]', 'sms_count', String(remainingSms));
-                                fs.exec('sleep 2');
-									uci.save();
-                                fs.exec('sleep 2');
-									uci.apply();
+							fs.exec('sleep 2');
+							uci.save();
+							fs.exec('sleep 2');
+							uci.apply();
 						} catch (e) {}
 						
-						ui.addNotification(null, E('p', _('Messages deleted successfully')), 'info');
+						ui.addNotification(null, E('p', _('Message(s) deleted successfully')), 'info');
 						window.setTimeout(function() {
 							location.reload();
-						},5000);
+						}, 5000);
 					});
 				});
 			}).catch(function(err) {
@@ -129,39 +195,25 @@ return view.extend({
 
 			let smsTable = E('table', { 
 				'class': 'table',
-				'id': 'smsTable',
-				'style': 'border:1px solid var(--border-color-medium)!important; table-layout:fixed; border-collapse:collapse; width:100%;'
+				'id': 'smsTable'
 			}, [
 				E('tr', { 'class': 'tr table-titles' }, [
-					E('th', { 
-						'class': 'th left',
-						'style': 'min-width:50px; width:7%; padding:10px; text-align:left!important; vertical-align:top!important; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-					}, 
+					E('th', { 'class': 'th checker' }, 
 						E('input', {
 							'id': 'ch-all',
 							'type': 'checkbox',
 							'name': 'checkall',
-							'style': 'float:left!important; margin:0 auto!important; width:17px!important;',
 							'click': ui.createHandlerFn(self, 'handleSelect')
 						})
 					),
-					E('th', { 
-						'class': 'th left',
-						'style': 'width:11%; padding:10px; text-align:left!important; vertical-align:top!important; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-					}, _('Sender')),
-					E('th', { 
-						'class': 'th left',
-						'style': 'width:15%; padding:10px; text-align:left!important; vertical-align:top!important; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-					}, _('Received')),
-					E('th', { 
-						'class': 'th center',
-						'style': 'width:67%; padding:10px; text-align:center!important; vertical-align:top!important; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-					}, _('Message'))
+					E('th', { 'class': 'th from' }, _('Sender')),
+					E('th', { 'class': 'th received' }, _('Received')),
+					E('th', { 'class': 'th message' }, _('Message'))
 				])
 			]);
 			
 			if (!modemPath) {
-				ui.addNotification(null, E('p', _('Please configure the SMS reading modem first')), 'info'); // 'warning'
+				ui.addNotification(null, E('p', _('Please configure the SMS reading modem first')), 'info');
 			} else {
 				let modemNum = modemPath.split('/').pop();
 				
@@ -169,11 +221,8 @@ return view.extend({
 					.then(function(listRes) {
 						
 						if (!listRes) {
-							let emptyRow = E('tr', {}, [
-								E('td', { 
-									'colspan': '4',
-									'style': 'text-align:center; padding:20px; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-								}, 
+							let emptyRow = E('tr', { 'class': 'tr placeholder' }, [
+								E('td', { 'class': 'td', 'colspan': '4', 'style': 'text-align:center; padding:20px;' }, 
 									_('No SMS messages found')
 								)
 							]);
@@ -191,11 +240,8 @@ return view.extend({
 						
 						
 						if (smsIds.length === 0) {
-							let emptyRow = E('tr', {}, [
-								E('td', { 
-									'colspan': '4',
-									'style': 'text-align:center; padding:20px; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-								}, 
+							let emptyRow = E('tr', { 'class': 'tr placeholder' }, [
+								E('td', { 'class': 'td', 'colspan': '4', 'style': 'text-align:center; padding:20px;' }, 
 									_('No SMS messages found')
 								)
 							]);
@@ -298,76 +344,53 @@ return view.extend({
 							return uci.load('sms_manager').then(function() {
 								try {
 									uci.set('sms_manager', '@sms_manager[0]', 'sms_count', String(sortedSmsList.length));
-                                fs.exec('sleep 2');
+									fs.exec('sleep 2');
 									uci.save();
-                                fs.exec('sleep 2');
+									fs.exec('sleep 2');
 									uci.apply();
 								} catch (e) {}
 							}).then(function() {
 								let Lres = L.resource('icons/sms_manager_delsms.png');
 								let iconz = String.format('<img style="width: 24px; height: 24px; "src="%s"/>', Lres);
 								
-								sortedSmsList.forEach(function(sms) {
-								let displayNumber = sms.sender;
-								
-								if (hideNumber && sms.sender.includes(hideNumber)) {
-									let removeLast5 = sms.sender.slice(0, -5);
-									displayNumber = removeLast5 + '#####';
-								}
-								
-								let displayTime = sms.timestamp;
-								try {
-									let date = sms.date;
-									if (date && !isNaN(date.getTime())) {
-										displayTime = date.getFullYear() + '-' + 
-											String(date.getMonth() + 1).padStart(2, '0') + '-' + 
-											String(date.getDate()).padStart(2, '0') + ' ' +
-											String(date.getHours()).padStart(2, '0') + ':' + 
-											String(date.getMinutes()).padStart(2, '0');
+								sortedSmsList.forEach(function(sms, i) {
+									let displayNumber = sms.sender;
+									
+									if (hideNumber && sms.sender.includes(hideNumber)) {
+										let removeLast5 = sms.sender.slice(0, -5);
+										displayNumber = removeLast5 + '#####';
 									}
-								} catch(e) {
-									// timestamp
-								}
-								
-								let row = E('tr', {}, [
-									E('td', { 
-										'class': 'td left',
-										'style': 'min-width:50px; width:7%; padding:10px; text-align:left!important; vertical-align:top!important; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-									}, [
-										E('input', {
-											'type': 'checkbox',
-											'name': 'smsn',
-											'style': 'float:left!important; margin:0 auto!important; width:17px!important;',
-											'data-sms-id': sms.index
-										}),
-										E('span', { 'style': 'margin-left: 5px;' }, E('raw', iconz))
-									]),
-									E('td', { 
-										'class': 'td left',
-										'style': 'width:11%; padding:10px; text-align:left!important; vertical-align:top!important; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-									}, displayNumber),
-									E('td', { 
-										'class': 'td left',
-										'style': 'width:15%; padding:10px; text-align:left!important; vertical-align:top!important; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-									}, displayTime),
-									E('td', { 
-										'class': 'td justify',
-										'style': 'width:67%; padding:10px; text-align:justify!important; vertical-align:top!important; border-bottom:1px solid var(--border-color-medium)!important; border-top:1px solid var(--border-color-medium)!important;'
-									}, sms.content.replace(/\s+/g, ' ').trim())
-								]);
-								
-								smsTable.appendChild(row);
-							});
-							
-							let allRows = smsTable.querySelectorAll('tr');
-							allRows.forEach(function(tr, idx) {
-								if (idx > 0 && idx % 2 === 0) {
-									let cells = tr.querySelectorAll('td');
-									cells.forEach(function(td) {
-										td.style.background = 'var(--background-color-medium)';
-									});
-								}
-							});
+									
+									let displayTime = sms.timestamp;
+									try {
+										let date = sms.date;
+										if (date && !isNaN(date.getTime())) {
+											displayTime = date.getFullYear() + '-' + 
+												String(date.getMonth() + 1).padStart(2, '0') + '-' + 
+												String(date.getDate()).padStart(2, '0') + ' ' +
+												String(date.getHours()).padStart(2, '0') + ':' + 
+												String(date.getMinutes()).padStart(2, '0');
+										}
+									} catch(e) {
+										// timestamp
+									}
+									
+									let row = E('tr', { 'class': 'tr cbi-rowstyle-%d'.format(i % 2 ? 2 : 1) }, [
+										E('td', { 'class': 'td checker' }, [
+											E('input', {
+												'type': 'checkbox',
+												'name': 'smsn',
+												'data-sms-id': sms.index
+											}),
+											E('span', { 'style': 'margin-left: 5px;' }, E('raw', iconz))
+										]),
+										E('td', { 'class': 'td from' }, displayNumber),
+										E('td', { 'class': 'td received' }, displayTime),
+										E('td', { 'class': 'td message' }, sms.content.replace(/\s+/g, ' ').trim())
+									]);
+									
+									smsTable.appendChild(row);
+								});
 							});
 						}).catch(function(err) {
 							ui.addNotification(null, E('p', _('Error loading SMS details: ') + err.message), 'error');

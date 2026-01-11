@@ -264,7 +264,7 @@ return view.extend({
 					E('input', {
 						'id': 'history-full',
 						'click': ui.createHandlerFn(this, 'handleClearOut'),
-						'data-tooltip': _('Check this option to enable interactive USSD mode for menu navigation'),
+						'data-tooltip': _('Check this option if you need to use the menu built on USSD codes'),
 						'type': 'checkbox',
 						'name': 'showhistory',
 						'disabled': null
