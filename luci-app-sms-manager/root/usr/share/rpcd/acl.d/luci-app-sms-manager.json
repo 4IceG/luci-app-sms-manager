@@ -14,6 +14,7 @@
 				"/sbin/sms_manager_led.sh": [ "exec" ],
 				"/sbin/sms_m_led.sh": [ "exec" ],
 				"/sbin/new_cron_sms_manager.sh": [ "exec" ],
+				"/usr/bin/mmcli": [ "exec" ],
 				"/usr/libexec/package-manager-call list-installed": [ "exec" ],
 				"/usr/libexec/opkg-list installed": [ "exec" ],
 				"/usr/libexec/opkg-call list-installed": [ "exec" ],
