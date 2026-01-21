@@ -488,6 +488,8 @@ return view.extend({
 								if (dsled == 'D' && led) {
 									fs.write('/sys/class/leds/'+led+'/brightness', '0');
 								}
+								fs.exec('sleep 2');
+								fs.exec_direct('/sbin/force_cron_refresh.sh');
 							}
 						}
 				});

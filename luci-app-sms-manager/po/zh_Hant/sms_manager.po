@@ -2,490 +2,490 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-sms-manager\n"
 "Language-Team: Rafał Wabik (IceG)\n"
-"Language: zh_CN\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "SMS Manager"
-msgstr "短信管理器"
+msgstr "簡訊管理器"
 
 msgid "Please select the message(s) to be deleted"
-msgstr "请选择要删除的消息"
+msgstr "請選擇要刪除的訊息"
 
 msgid "Delete all the messages?"
-msgstr "删除所有消息？"
+msgstr "刪除所有訊息？"
 
 msgid "Delete selected message(s)?"
-msgstr "删除所选消息？"
+msgstr "刪除所選訊息？"
 
 msgid "Please set the modem for communication"
-msgstr "请设置用于通信的调制解调器"
+msgstr "請設定用於通訊的數據機"
 
 msgid "No valid SMS IDs found"
-msgstr "未找到有效的短信ID"
+msgstr "未找到有效的簡訊ID"
 
 msgid "Message(s) deleted successfully"
-msgstr "消息删除成功"
+msgstr "訊息刪除成功"
 
 msgid "Error deleting messages: "
-msgstr "删除消息时出错："
+msgstr "刪除訊息時發生錯誤："
 
 msgid "Sender"
-msgstr "发件人"
+msgstr "寄件人"
 
 msgid "Received"
 msgstr "已接收"
 
 msgid "Message"
-msgstr "消息"
+msgstr "訊息"
 
 msgid "Please configure the SMS reading modem first"
-msgstr "请先配置短信读取调制解调器"
+msgstr "請先設定簡訊讀取數據機"
 
 msgid "No SMS messages found"
-msgstr "未找到短信消息"
+msgstr "未找到簡訊訊息"
 
 msgid "Error loading SMS details: "
-msgstr "加载短信详情时出错："
+msgstr "載入簡訊詳情時發生錯誤："
 
 msgid "Error listing SMS: "
-msgstr "列出短信时出错："
+msgstr "列出簡訊時發生錯誤："
 
 msgid "SMS Messages"
-msgstr "短信消息"
+msgstr "簡訊訊息"
 
 msgid "User interface for reading messages using ModemManager."
-msgstr "使用ModemManager读取消息的用户界面。"
+msgstr "使用ModemManager讀取訊息的使用者介面。"
 
 msgid "Received Messages"
-msgstr "已接收消息"
+msgstr "已接收訊息"
 
 msgid "Message storage area"
-msgstr "消息存储区域"
+msgstr "訊息儲存區域"
 
 msgid "SM / ME (Automatic selection)"
-msgstr "SM / ME（自动选择）"
+msgstr "SM / ME（自動選擇）"
 
 msgid "Storage SM / ME used"
-msgstr "已使用存储SM / ME"
+msgstr "已使用儲存SM / ME"
 
 msgid "Loading..."
-msgstr "加载中..."
+msgstr "載入中..."
 
 msgid "Delete message(s)"
-msgstr "删除消息"
+msgstr "刪除訊息"
 
 msgid "Refresh"
-msgstr "刷新"
+msgstr "重新整理"
 
 msgid ""
 msgstr ""
 
 msgid "Please specify the command to send"
-msgstr "请指定要发送的命令"
+msgstr "請指定要傳送的命令"
 
 msgid "Please set the modem for communication"
-msgstr "请设置用于通信的调制解调器"
+msgstr "請設定用於通訊的數據機"
 
 msgid "User interface for sending AT commands using ModemManager."
-msgstr "使用ModemManager发送AT命令的用户界面。"
+msgstr "使用ModemManager傳送AT命令的使用者介面。"
 
 msgid "AT Commands"
 msgstr "AT命令"
 
 msgid "User AT commands"
-msgstr "用户定义的AT命令"
+msgstr "使用者定義的AT命令"
 
 msgid "Command to send"
-msgstr "要发送的命令"
+msgstr "要傳送的命令"
 
 msgid "Press [Enter] to send the command, press [Delete] to delete the command"
-msgstr "按[Enter]发送命令，按[Delete]删除命令"
+msgstr "按[Enter]傳送命令，按[Delete]刪除命令"
 
 msgid "Clear form"
-msgstr "清除表单"
+msgstr "清除表單"
 
 msgid "Send command"
-msgstr "发送命令"
+msgstr "傳送命令"
 
 msgid "Reply"
-msgstr "回复"
+msgstr "回覆"
 
 msgid ""
 msgstr ""
 
 msgid "Please specify the phone number to which you want to send the message"
-msgstr "请指定要发送消息的电话号码"
+msgstr "請指定要傳送訊息的電話號碼"
 
 msgid "Please specify the message you want to send"
-msgstr "请指定要发送的消息"
+msgstr "請指定要傳送的訊息"
 
 msgid "Please set the modem for communication"
-msgstr "请设置用于通信的调制解调器"
+msgstr "請設定用於通訊的數據機"
 
 msgid "Please specify phone number"
-msgstr "请指定电话号码"
+msgstr "請指定電話號碼"
 
 msgid "SMS sent successfully to"
-msgstr "短信成功发送至"
+msgstr "簡訊成功傳送至"
 
 msgid "Failed to send SMS to"
-msgstr "短信发送失败至"
+msgstr "簡訊傳送失敗至"
 
 msgid "Failed to create SMS"
-msgstr "创建短信失败"
+msgstr "建立簡訊失敗"
 
 msgid "Error creating SMS: "
-msgstr "创建短信时出错："
+msgstr "建立簡訊時發生錯誤："
 
 msgid "The phone number should be preceded by the country prefix (for Poland it is +48)."
-msgstr "电话号码前应加上国家代码（对于中国是+86）。"
+msgstr "電話號碼前應加上國碼（台灣為+886，中國為+86）。"
 
 msgid "User interface for sending messages using ModemManager."
-msgstr "使用ModemManager发送消息的用户界面。"
+msgstr "使用ModemManager傳送訊息的使用者介面。"
 
 msgid "SMS Messages"
-msgstr "短信消息"
+msgstr "簡訊訊息"
 
 msgid "User contacts"
-msgstr "用户联系人"
+msgstr "使用者聯絡人"
 
 msgid "Send to"
-msgstr "发送至"
+msgstr "傳送至"
 
 msgid "Press [Delete] to delete the phone number"
-msgstr "按[Delete]删除电话号码"
+msgstr "按[Delete]刪除電話號碼"
 
 msgid "Encoding standard"
-msgstr "编码标准"
+msgstr "編碼標準"
 
 msgid "GSM-7 encoding (160 characters)"
-msgstr "GSM-7编码（160个字符）"
+msgstr "GSM-7編碼（160個字元）"
 
 msgid "GSM-7 (160 characters)"
-msgstr "GSM-7（160个字符）"
+msgstr "GSM-7（160個字元）"
 
 msgid "Unicode encoding (70 characters)"
-msgstr "Unicode编码（70个字符)"
+msgstr "Unicode編碼（70個字元）"
 
 msgid "Unicode (70 characters)"
-msgstr "Unicode（70个字符）"
+msgstr "Unicode（70個字元）"
 
 msgid "Message text"
-msgstr "消息文本"
+msgstr "訊息文字"
 
 msgid "Press [Delete] to delete the content of the message"
-msgstr "按[Delete]删除消息内容"
+msgstr "按[Delete]刪除訊息內容"
 
 msgid "Characters remaining:"
-msgstr "剩余字符："
+msgstr "剩餘字元："
 
 msgid "160"
 msgstr "160"
 
 msgid "Clear form"
-msgstr "清除表单"
+msgstr "清除表單"
 
 msgid "Send"
-msgstr "发送"
+msgstr "傳送"
 
 msgid "to number"
-msgstr "至号码"
+msgstr "至號碼"
 
 msgid "to group"
-msgstr "至群组"
+msgstr "至群組"
 
 msgid "Send to number"
-msgstr "发送至号码"
+msgstr "傳送至號碼"
 
 msgid "Status"
-msgstr "状态"
+msgstr "狀態"
 
 msgid ""
 msgstr ""
 
 msgid "Error sending USSD code. Please check modem status."
-msgstr "发送USSD代码时出错。请检查调制解调器状态。"
+msgstr "傳送USSD代碼時發生錯誤。請檢查數據機狀態。"
 
 msgid "ModemManager error. Please check if modem is available."
-msgstr "ModemManager错误。请检查调制解调器是否可用。"
+msgstr "ModemManager錯誤。請檢查數據機是否可用。"
 
 msgid "No modem found. Please check ModemManager."
-msgstr "未找到调制解调器。请检查ModemManager。"
+msgstr "未找到數據機。請檢查ModemManager。"
 
 msgid "Please specify the code to send"
-msgstr "请指定要发送的代码"
+msgstr "請指定要傳送的代碼"
 
 msgid "Please set the modem for communication"
-msgstr "请设置用于通信的调制解调器"
+msgstr "請設定用於通訊的數據機"
 
 msgid "User interface for sending USSD codes using ModemManager."
-msgstr "使用ModemManager发送USSD代码的用户界面。"
+msgstr "使用ModemManager傳送USSD代碼的使用者介面。"
 
 msgid "USSD Codes"
-msgstr "USSD代码"
+msgstr "USSD代碼"
 
 msgid "User USSD codes"
-msgstr "用户定义的USSD代码"
+msgstr "使用者定義的USSD代碼"
 
 msgid "Code to send"
-msgstr "要发送的代码"
+msgstr "要傳送的代碼"
 
 msgid "Press [Enter] to send the code, press [Delete] to delete the code"
-msgstr "按[Enter]发送代码，按[Delete]删除代码"
+msgstr "按[Enter]傳送代碼，按[Delete]刪除代碼"
 
 msgid "Check this option if you need to use the menu built on USSD codes"
-msgstr "如果需要使用基于USSD代码构建的菜单，请选中此选项"
+msgstr "如果需要使用基於USSD代碼建立的選單，請勾選此選項"
 
 msgid "Keep the previous reply when sending a new USSD code."
-msgstr "发送新USSD代码时保留先前的回复。"
+msgstr "傳送新USSD代碼時保留先前的回覆。"
 
 msgid "View new reply from top"
-msgstr "从顶部查看新回复"
+msgstr "從頂部檢視新回覆"
 
 msgid "Turn over the replies."
-msgstr "翻转回复。"
+msgstr "翻轉回覆。"
 
 msgid "Clear form"
-msgstr "清除表单"
+msgstr "清除表單"
 
 msgid "Send code"
-msgstr "发送代码"
+msgstr "傳送代碼"
 
 msgid "Reply"
-msgstr "回复"
+msgstr "回覆"
 
 msgid ""
 msgstr ""
 
 msgid "The tab allows users to support the package."
-msgstr "此标签允许用户支持该软件包。"
+msgstr "此標籤允許使用者支援該套件。"
 
 msgid "Package update and support"
-msgstr "软件包更新和支持"
+msgstr "套件更新和支援"
 
 msgid "Luci-app-sms-manager Info"
-msgstr "Luci-app-sms-manager 信息"
+msgstr "Luci-app-sms-manager 資訊"
 
 msgid "Luci-app-sms-manager"
 msgstr "Luci-app-sms-manager"
 
 msgid "Buy a coffee"
-msgstr "请喝咖啡"
+msgstr "請喝咖啡"
 
 msgid "Buy a coffee if you want to support the development of the project and the author"
-msgstr "如果您想支持项目开发和作者，请喝杯咖啡"
+msgstr "如果您想支援專案開發和作者，請喝杯咖啡"
 
 msgid "Become a sponsor"
-msgstr "成为赞助商"
+msgstr "成為贊助者"
 
 msgid "Become a sponsor if you want to support the development of the project and the author"
-msgstr "如果您想支持项目开发和作者，请成为赞助商"
+msgstr "如果您想支援專案開發和作者，請成為贊助者"
 
 msgid "Write on forum"
-msgstr "在论坛上发帖"
+msgstr "在論壇上發文"
 
 msgid "Write in the topic of the package on the forum eko.one.pl"
-msgstr "在论坛eko.one.pl的软件包主题中发帖"
+msgstr "在論壇eko.one.pl的套件主題中發文"
 
 msgid "Open discussion"
-msgstr "打开讨论"
+msgstr "開啟討論"
 
 msgid "Open a package discussion on Github"
-msgstr "在Github上打开软件包讨论"
+msgstr "在Github上開啟套件討論"
 
 msgid "Report a bug"
-msgstr "报告错误"
+msgstr "回報錯誤"
 
 msgid "Report a bug on the package Github page"
-msgstr "在软件包Github页面上报告错误"
+msgstr "在套件Github頁面上回報錯誤"
 
 msgid "Package name"
-msgstr "软件包名称"
+msgstr "套件名稱"
 
 msgid "Author (package maintainer)"
-msgstr "作者（软件包维护者）"
+msgstr "作者（套件維護者）"
 
 msgid "Information about package author and available support options."
-msgstr "关于软件包作者和可用支持选项的信息。"
+msgstr "關於套件作者和可用支援選項的資訊。"
 
 msgid ""
 msgstr ""
 
 msgid "Configuration SMS Manager"
-msgstr "短信管理器配置"
+msgstr "簡訊管理器設定"
 
 msgid "Configuration panel for SMS Manager application."
-msgstr "短信管理器应用程序的配置面板。"
+msgstr "簡訊管理器應用程式的設定面板。"
 
 msgid "SMS Settings"
-msgstr "短信设置"
+msgstr "簡訊設定"
 
 msgid "SMS reading modem"
-msgstr "短信读取调制解调器"
+msgstr "簡訊讀取數據機"
 
 msgid "Select one of the available modems from ModemManager."
-msgstr "从ModemManager中选择一个可用的调制解调器。"
+msgstr "從ModemManager中選擇一個可用的數據機。"
 
 msgid "Please select a modem"
-msgstr "请选择调制解调器"
+msgstr "請選擇數據機"
 
 msgid "Phone number to be blurred"
-msgstr "要隐藏的电话号码"
+msgstr "要隱藏的電話號碼"
 
 msgid "The last 5 digits of this number will be blurred."
-msgstr "此号码的最后5位数字将被隐藏。"
+msgstr "此號碼的最後5位數字將被隱藏。"
 
 msgid "Explanation of number and prefix"
-msgstr "号码和前缀说明"
+msgstr "號碼和前綴說明"
 
 msgid "In the tab for sending SMSes, show an explanation of the prefix and the correct phone number."
-msgstr "在发送短信的标签页中，显示前缀和正确电话号码的说明。"
+msgstr "在傳送簡訊的標籤頁中，顯示前綴和正確電話號碼的說明。"
 
 msgid "Save messages to a text file"
-msgstr "将消息保存到文本文件"
+msgstr "將訊息儲存到文字檔案"
 
 msgid "This option allows to backup SMS messages or, for example, save messages that are not supported by ModemManager."
-msgstr "此选项允许备份短信消息或例如保存ModemManager不支持的消息。"
+msgstr "此選項允許備份簡訊訊息或例如儲存ModemManager不支援的訊息。"
 
 msgid "Save as .txt file"
-msgstr "保存为.txt文件"
+msgstr "儲存為.txt檔案"
 
 msgid "Please configure SMS reading modem first"
-msgstr "请先配置短信读取调制解调器"
+msgstr "請先設定簡訊讀取數據機"
 
 msgid "No SMS messages found on modem"
-msgstr "调制解调器上未找到短信消息"
+msgstr "數據機上未找到簡訊訊息"
 
 msgid "No SMS messages found"
-msgstr "未找到短信消息"
+msgstr "未找到簡訊訊息"
 
 msgid "Error saving file: "
-msgstr "保存文件时出错："
+msgstr "儲存檔案時發生錯誤："
 
 msgid "Saved messages successfully!"
-msgstr "消息保存成功！"
+msgstr "訊息儲存成功！"
 
 msgid "Delete all messages?"
-msgstr "删除所有消息？"
+msgstr "刪除所有訊息？"
 
 msgid "Permanently delete all SMS"
-msgstr "永久删除所有短信"
+msgstr "永久刪除所有簡訊"
 
 msgid "This action will permanently delete all messages. Continue?"
-msgstr "此操作将永久删除所有消息。继续？"
+msgstr "此操作將永久刪除所有訊息。繼續？"
 
 msgid "Cancel"
 msgstr "取消"
 
 msgid "Delete"
-msgstr "删除"
+msgstr "刪除"
 
 msgid "All messages deleted successfully"
-msgstr "所有消息已成功删除"
+msgstr "所有訊息已成功刪除"
 
 msgid "Error deleting messages: "
-msgstr "删除消息时出错："
+msgstr "刪除訊息時發生錯誤："
 
 msgid "SMS sending modem"
-msgstr "短信发送调制解调器"
+msgstr "簡訊傳送數據機"
 
 msgid "Phone number prefix"
-msgstr "电话号码前缀"
+msgstr "電話號碼前綴"
 
 msgid "Country prefix for phone numbers (for Poland it is +48)."
-msgstr "电话号码的国家前缀（对于中国是+86）。"
+msgstr "電話號碼的國碼前綴（台灣為+886，中國為+86）。"
 
 msgid "Expected format: +decimal value or decimal value"
-msgstr "预期格式：+十进制值或十进制值"
+msgstr "預期格式：+十進位值或十進位值"
 
 msgid "Add prefix to phone number"
-msgstr "将前缀添加到电话号码"
+msgstr "將前綴新增到電話號碼"
 
 msgid "Automatically add prefix to the phone number field."
-msgstr "自动将前缀添加到电话号码字段。"
+msgstr "自動將前綴新增到電話號碼欄位。"
 
 msgid "Enable group messaging"
-msgstr "启用群组消息"
+msgstr "啟用群組訊息"
 
 msgid "This option allows you to send one message to all contacts in the user's contact list."
-msgstr "此选项允许您向用户联系人列表中的所有联系人发送一条消息。"
+msgstr "此選項允許您向使用者聯絡人清單中的所有聯絡人傳送一則訊息。"
 
 msgid "User contacts"
-msgstr "用户联系人"
+msgstr "使用者聯絡人"
 
 msgid "Each line must have the following format: 'Contact name;phone number'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_phonebook.user</code>."
-msgstr "每行必须具有以下格式：'联系人姓名;电话号码'。为了用户方便，文件保存在位置<code>/etc/modem/sms_manager_phonebook.user</code>。"
+msgstr "每行必須具有以下格式：'聯絡人姓名;電話號碼'。為了使用者方便，檔案儲存在位置<code>/etc/modem/sms_manager_phonebook.user</code>。"
 
 msgid "USSD Codes Settings"
-msgstr "USSD代码设置"
+msgstr "USSD代碼設定"
 
 msgid "USSD sending modem"
-msgstr "USSD发送调制解调器"
+msgstr "USSD傳送數據機"
 
 msgid "User USSD codes"
-msgstr "用户USSD代码"
+msgstr "使用者USSD代碼"
 
 msgid "Each line must have the following format: 'Code description;code'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_ussdcodes.user</code>."
-msgstr "每行必须具有以下格式：'代码描述;代码'。为了用户方便，文件保存在位置<code>/etc/modem/sms_manager_ussdcodes.user</code>。"
+msgstr "每行必須具有以下格式：'代碼描述;代碼'。為了使用者方便，檔案儲存在位置<code>/etc/modem/sms_manager_ussdcodes.user</code>。"
 
 msgid "AT Commands Settings"
-msgstr "AT命令设置"
+msgstr "AT命令設定"
 
 msgid "AT commands sending modem"
-msgstr "AT命令发送调制解调器"
+msgstr "AT命令傳送數據機"
 
 msgid "Select one of the available modems from ModemManager. <br /><br /><b>Important</b> <br />Sending AT commands via ModemManager requires the AT command interface to be compiled in. This functionality is not available in the standard ModemManager package and requires custom compilation with AT command support enabled."
-msgstr "从ModemManager中选择一个可用的调制解调器。<br /><br /><b>重要</b> <br />通过ModemManager发送AT命令需要编译AT命令接口。此功能在标准ModemManager包中不可用，需要启用AT命令支持的自定义编译。"
+msgstr "從ModemManager中選擇一個可用的數據機。<br /><br /><b>重要</b> <br />透過ModemManager傳送AT命令需要編譯AT命令介面。此功能在標準ModemManager套件中不可用，需要啟用AT命令支援的自訂編譯。"
 
 msgid "User AT commands"
-msgstr "用户AT命令"
+msgstr "使用者AT命令"
 
 msgid "Each line must have the following format: 'At command description;AT command'. For user convenience, the file is saved to the location <code>/etc/modem/sms_manager_atcmmds.user</code>."
-msgstr "每行必须具有以下格式：'AT命令描述;AT命令'。为了用户方便，文件保存在位置<code>/etc/modem/sms_manager_atcmmds.user</code>。"
+msgstr "每行必須具有以下格式：'AT命令描述;AT命令'。為了使用者方便，檔案儲存在位置<code>/etc/modem/sms_manager_atcmmds.user</code>。"
 
 msgid "Notification Settings"
-msgstr "通知设置"
+msgstr "通知設定"
 
 msgid "Notify new messages"
-msgstr "通知新消息"
+msgstr "通知新訊息"
 
 msgid "The LED informs about a new message. Before activating this function, please config and save the SMS reading modem, time to check SMS inbox and select the notification LED."
-msgstr "LED通知新消息。在激活此功能之前，请配置并保存短信读取调制解调器、检查短信收件箱的时间并选择通知LED。"
+msgstr "LED通知新訊息。在啟用此功能之前，請設定並儲存簡訊讀取數據機、檢查簡訊收件匣的時間並選擇通知LED。"
 
 msgid "Check inbox every minute(s)"
-msgstr "每分钟检查收件箱"
+msgstr "每分鐘檢查收件匣"
 
 msgid "Specify how many minutes you want your inbox to be checked."
-msgstr "指定您希望多少分钟检查一次收件箱。"
+msgstr "指定您希望多少分鐘檢查一次收件匣。"
 
 msgid "Expect a decimal value between five and fifty-nine"
-msgstr "期望值为5到59之间的十进制值"
+msgstr "預期值為5到59之間的十進位值"
 
 msgid "Restart the inbox checking process every"
-msgstr "重新启动收件箱检查过程每隔"
+msgstr "重新啟動收件匣檢查程序每隔"
 
 msgid "The process will restart at the selected time interval. This will eliminate the delay in checking your inbox."
-msgstr "该过程将在选定的时间间隔重新启动。这将消除检查收件箱的延迟。"
+msgstr "該程序將在選定的時間間隔重新啟動。這將消除檢查收件匣的延遲。"
 
 msgid "4h"
-msgstr "4小时"
+msgstr "4小時"
 
 msgid "6h"
-msgstr "6小时"
+msgstr "6小時"
 
 msgid "8h"
-msgstr "8小时"
+msgstr "8小時"
 
 msgid "12h"
-msgstr "12小时"
+msgstr "12小時"
 
 msgid "The diode is dedicated only to these notifications"
-msgstr "LED仅用于这些通知"
+msgstr "LED僅用於這些通知"
 
 msgid "Select 'No' in case the router has only one LED or if the LED is multi-tasking. <br /><br /><b>Important</b> <br />This option requires LED to be defined in the system (if possible) to work properly. This requirement applies when the diode supports multiple tasks."
-msgstr "如果路由器只有一个LED或LED是多任务的，请选择"否"。<br /><br /><b>重要</b> <br />此选项需要在系统中定义LED（如果可能）才能正常工作。当LED支持多个任务时适用此要求。"
+msgstr "如果路由器只有一個LED或LED是多工的，請選擇「否」。<br /><br /><b>重要</b> <br />此選項需要在系統中定義LED（如果可能）才能正常運作。當LED支援多個任務時適用此要求。"
 
 msgid "No"
 msgstr "否"
@@ -494,7 +494,7 @@ msgid "Yes"
 msgstr "是"
 
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Name"
-msgstr "<abbr title=\"发光二极管\">LED</abbr> 名称"
+msgstr "<abbr title=\"發光二極體\">LED</abbr> 名稱"
 
 msgid "Select the notification LED."
-msgstr "选择通知LED。"
+msgstr "選擇通知LED。"

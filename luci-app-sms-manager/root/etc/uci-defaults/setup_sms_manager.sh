@@ -4,6 +4,7 @@
 # Licensed to the GNU General Public License v3.0.
 #
 
+chmod +x /sbin/force_cron_refresh.sh >/dev/null 2>&1 &
 chmod +x /sbin/sms_m_led.sh >/dev/null 2>&1 &
 chmod +x /sbin/sms_manager_led.sh >/dev/null 2>&1 &
 chmod +x /sbin/new_cron_sms_manager.sh >/dev/null 2>&1 &

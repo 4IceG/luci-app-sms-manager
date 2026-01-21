@@ -1,4 +1,9 @@
 msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-sms-manager\n"
+"Language-Team: Rafał Wabik (IceG)\n"
+
+msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
 msgid "SMS Manager"
