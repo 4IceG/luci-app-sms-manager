@@ -1,9 +1,4 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: luci-app-sms-manager\n"
-"Language-Team: Rafał Wabik (IceG)\n"
-
-msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
 msgid "SMS Manager"
@@ -497,3 +492,129 @@ msgstr "Nome <abbr title=\"Diodo emettitore di luce\">LED</abbr>"
 
 msgid "Select the notification LED."
 msgstr "Seleziona il LED di notifica."
+
+msgid "SMS Forwarding to E-mail Settings"
+msgstr "Impostazioni inoltro SMS a e-mail"
+
+msgid "An e-mail will be sent.."
+msgstr "Verrà inviata un'e-mail.."
+
+msgid "Enable message forwarding"
+msgstr "Abilita inoltro messaggi"
+
+msgid "E-mail settings"
+msgstr "Impostazioni e-mail"
+
+msgid "Select a predefined e-mail settings or enter settings manually."
+msgstr "Seleziona impostazioni e-mail predefinite o inserisci le impostazioni manualmente."
+
+msgid "Recipient"
+msgstr "Destinatario"
+
+msgid "E-mail address of the recipient."
+msgstr "Indirizzo e-mail del destinatario."
+
+msgid "E-mail address of the sender."
+msgstr "Indirizzo e-mail del mittente."
+
+msgid "User"
+msgstr "Utente"
+
+msgid "Username for SMTP authentication."
+msgstr "Nome utente per l'autenticazione SMTP."
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Google app password / Password for SMTP authentication."
+msgstr "Password app Google / Password per l'autenticazione SMTP."
+
+msgid "SMTP server"
+msgstr "Server SMTP"
+
+msgid "Hostname/IP address of the SMTP server."
+msgstr "Nome host/indirizzo IP del server SMTP."
+
+msgid "SMTP server port"
+msgstr "Porta del server SMTP"
+
+msgid "Security"
+msgstr "Sicurezza"
+
+msgid "TLS: use STARTTLS if the server supports it."
+msgstr "TLS: usa STARTTLS se il server lo supporta."
+
+msgid "SSL: SMTP over SSL."
+msgstr "SSL: SMTP tramite SSL."
+
+msgid "Required Package"
+msgstr "Pacchetto richiesto"
+
+msgid "The SMS forwarding option requires the mailsend package to be installed."
+msgstr "L'opzione di inoltro SMS richiede l'installazione del pacchetto mailsend."
+
+msgid "Check required packages"
+msgstr "Controlla pacchetti richiesti"
+
+msgid "Check"
+msgstr "Controlla"
+
+msgid "Mailsend Package"
+msgstr "Pacchetto mailsend"
+
+msgid "Loading package data…"
+msgstr "Caricamento dati pacchetto…"
+
+msgid "Installed"
+msgstr "Installato"
+
+msgid "Install…"
+msgstr "Installa…"
+
+msgid "Please select exactly one message to forward"
+msgstr "Selezionare esattamente un messaggio da inoltrare"
+
+msgid "Forward selected message to e-mail?"
+msgstr "Inoltrare il messaggio selezionato all'e-mail?"
+
+msgid "Sending e-mail..."
+msgstr "Invio e-mail..."
+
+msgid "Message forwarded successfully"
+msgstr "Messaggio inoltrato con successo"
+
+msgid "Failed to forward message: %s"
+msgstr "Impossibile inoltrare il messaggio: %s"
+
+msgid "Error: %s"
+msgstr "Errore: %s"
+
+msgid "user define"
+msgstr "definito dall'utente"
+
+msgid "Forward SMS"
+msgstr "Inoltra"
+
+msgid "Please select the message(s) to be forwarded"
+msgstr "Selezionare il/i messaggio/i da inoltrare"
+
+msgid "SMS forwarding function is not enabled. Please configure it first"
+msgstr "La funzione di inoltro SMS non è abilitata. Configurarla prima"
+
+msgid "My Router"
+msgstr "Il mio router"
+
+msgid "Forward SMS to E-mail"
+msgstr "Inoltra SMS a e-mail"
+
+msgid "Subject:"
+msgstr "Oggetto:"
+
+msgid "Message text:"
+msgstr "Testo del messaggio:"
+
+msgid "Subject and body cannot be empty"
+msgstr "Oggetto e corpo non possono essere vuoti"
+
+msgid "Package mailsend is not installed. Please install it first using the Install... button below"
+msgstr "Il pacchetto mailsend non è installato. Installarlo prima utilizzando il pulsante Installa... qui sotto"

@@ -1,9 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: luci-app-sms-manager\n"
-"Language-Team: Rafał Wabik (IceG)\n"
 "Language: vi\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
@@ -498,3 +495,129 @@ msgstr "Tên <abbr title=\"Diode phát quang\">LED</abbr>"
 
 msgid "Select the notification LED."
 msgstr "Chọn đèn LED thông báo."
+
+msgid "SMS Forwarding to E-mail Settings"
+msgstr "Cài đặt chuyển tiếp SMS sang e-mail"
+
+msgid "An e-mail will be sent.."
+msgstr "Một e-mail sẽ được gửi.."
+
+msgid "Enable message forwarding"
+msgstr "Bật chuyển tiếp tin nhắn"
+
+msgid "E-mail settings"
+msgstr "Cài đặt e-mail"
+
+msgid "Select a predefined e-mail settings or enter settings manually."
+msgstr "Chọn cài đặt e-mail được xác định trước hoặc nhập cài đặt thủ công."
+
+msgid "Recipient"
+msgstr "Người nhận"
+
+msgid "E-mail address of the recipient."
+msgstr "Địa chỉ e-mail của người nhận."
+
+msgid "E-mail address of the sender."
+msgstr "Địa chỉ e-mail của người gửi."
+
+msgid "User"
+msgstr "Người dùng"
+
+msgid "Username for SMTP authentication."
+msgstr "Tên người dùng để xác thực SMTP."
+
+msgid "Password"
+msgstr "Mật khẩu"
+
+msgid "Google app password / Password for SMTP authentication."
+msgstr "Mật khẩu ứng dụng Google / Mật khẩu để xác thực SMTP."
+
+msgid "SMTP server"
+msgstr "Máy chủ SMTP"
+
+msgid "Hostname/IP address of the SMTP server."
+msgstr "Tên máy chủ/địa chỉ IP của máy chủ SMTP."
+
+msgid "SMTP server port"
+msgstr "Cổng máy chủ SMTP"
+
+msgid "Security"
+msgstr "Bảo mật"
+
+msgid "TLS: use STARTTLS if the server supports it."
+msgstr "TLS: sử dụng STARTTLS nếu máy chủ hỗ trợ."
+
+msgid "SSL: SMTP over SSL."
+msgstr "SSL: SMTP qua SSL."
+
+msgid "Required Package"
+msgstr "Gói bắt buộc"
+
+msgid "The SMS forwarding option requires the mailsend package to be installed."
+msgstr "Tùy chọn chuyển tiếp SMS yêu cầu cài đặt gói mailsend."
+
+msgid "Check required packages"
+msgstr "Kiểm tra gói bắt buộc"
+
+msgid "Check"
+msgstr "Kiểm tra"
+
+msgid "Mailsend Package"
+msgstr "Gói mailsend"
+
+msgid "Loading package data…"
+msgstr "Đang tải dữ liệu gói…"
+
+msgid "Installed"
+msgstr "Đã cài đặt"
+
+msgid "Install…"
+msgstr "Cài đặt…"
+
+msgid "Please select exactly one message to forward"
+msgstr "Vui lòng chọn chính xác một tin nhắn để chuyển tiếp"
+
+msgid "Forward selected message to e-mail?"
+msgstr "Chuyển tiếp tin nhắn đã chọn đến e-mail?"
+
+msgid "Sending e-mail..."
+msgstr "Đang gửi e-mail..."
+
+msgid "Message forwarded successfully"
+msgstr "Đã chuyển tiếp tin nhắn thành công"
+
+msgid "Failed to forward message: %s"
+msgstr "Không thể chuyển tiếp tin nhắn: %s"
+
+msgid "Error: %s"
+msgstr "Lỗi: %s"
+
+msgid "user define"
+msgstr "người dùng xác định"
+
+msgid "Forward SMS"
+msgstr "Chuyển tiếp"
+
+msgid "Please select the message(s) to be forwarded"
+msgstr "Vui lòng chọn (các) tin nhắn để chuyển tiếp"
+
+msgid "SMS forwarding function is not enabled. Please configure it first"
+msgstr "Chức năng chuyển tiếp SMS chưa được bật. Vui lòng cấu hình trước"
+
+msgid "My Router"
+msgstr "Bộ định tuyến của tôi"
+
+msgid "Forward SMS to E-mail"
+msgstr "Chuyển tiếp SMS đến e-mail"
+
+msgid "Subject:"
+msgstr "Chủ đề:"
+
+msgid "Message text:"
+msgstr "Nội dung tin nhắn:"
+
+msgid "Subject and body cannot be empty"
+msgstr "Chủ đề và nội dung không được để trống"
+
+msgid "Package mailsend is not installed. Please install it first using the Install... button below"
+msgstr "Gói mailsend chưa được cài đặt. Vui lòng cài đặt trước bằng nút Cài đặt... bên dưới"

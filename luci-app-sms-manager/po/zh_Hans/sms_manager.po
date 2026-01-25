@@ -1,9 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: luci-app-sms-manager\n"
-"Language-Team: Rafał Wabik (IceG)\n"
 "Language: zh_CN\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
@@ -498,3 +495,131 @@ msgstr "<abbr title=\"发光二极管\">LED</abbr> 名称"
 
 msgid "Select the notification LED."
 msgstr "选择通知LED。"
+
+msgid "SMS Forwarding to E-mail Settings"
+msgstr "短信转发到电子邮件设置"
+
+msgid "An e-mail will be sent.."
+msgstr "将发送一封电子邮件.."
+
+msgid "Enable message forwarding"
+msgstr "启用消息转发"
+
+msgid "E-mail settings"
+msgstr "电子邮件设置"
+
+msgid "Select a predefined e-mail settings or enter settings manually."
+msgstr "选择预定义的电子邮件设置或手动输入设置。"
+
+msgid "Recipient"
+msgstr "收件人"
+
+msgid "E-mail address of the recipient."
+msgstr "收件人的电子邮件地址。"
+
+msgid "E-mail address of the sender."
+msgstr "发件人的电子邮件地址。"
+
+msgid "User"
+msgstr "用户"
+
+msgid "Username for SMTP authentication."
+msgstr "SMTP 身份验证的用户名。"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Google app password / Password for SMTP authentication."
+msgstr "Google 应用密码 / SMTP 身份验证密码。"
+
+msgid "SMTP server"
+msgstr "SMTP 服务器"
+
+msgid "Hostname/IP address of the SMTP server."
+msgstr "SMTP 服务器的主机名/IP 地址。"
+
+msgid "SMTP server port"
+msgstr "SMTP 服务器端口"
+
+msgid "Security"
+msgstr "安全"
+
+msgid "TLS: use STARTTLS if the server supports it."
+msgstr "TLS:如果服务器支持,则使用 STARTTLS。"
+
+msgid "SSL: SMTP over SSL."
+msgstr "SSL:SMTP over SSL。"
+
+msgid "Required Package"
+msgstr "所需软件包"
+
+msgid "The SMS forwarding option requires the mailsend package to be installed."
+msgstr "短信转发选项需要安装 mailsend 软件包。"
+
+msgid "Check required packages"
+msgstr "检查所需软件包"
+
+msgid "Check"
+msgstr "检查"
+
+msgid "Mailsend Package"
+msgstr "Mailsend 软件包"
+
+msgid "Loading package data…"
+msgstr "正在加载软件包数据…"
+
+msgid "Installed"
+msgstr "已安装"
+
+msgid "Install…"
+msgstr "安装…"
+
+msgid "Please select exactly one message to forward"
+msgstr "请选择要转发的一条消息"
+
+msgid "Forward selected message to e-mail?"
+msgstr "将选定的消息转发到电子邮件?"
+
+msgid "Sending e-mail..."
+msgstr "正在发送电子邮件..."
+
+msgid "Message forwarded successfully"
+msgstr "消息已成功转发"
+
+msgid "Failed to forward message: %s"
+msgstr "转发消息失败:%s"
+
+msgid "Error: %s"
+msgstr "错误:%s"
+
+msgid "user define"
+msgstr "用户定义"
+
+msgid "Forward SMS"
+msgstr "转发"
+
+msgid "Please select the message(s) to be forwarded"
+msgstr "请选择要转发的消息"
+
+msgid "SMS forwarding function is not enabled. Please configure it first"
+msgstr "未启用短信转发功能。请先配置"
+
+msgid "My Router"
+msgstr "我的路由器"
+
+msgid "Forward SMS to E-mail"
+msgstr "将短信转发到电子邮件"
+
+msgid "Subject:"
+msgstr "主题:"
+
+msgid "Message text:"
+msgstr "消息文本:"
+
+msgid "Subject and body cannot be empty"
+msgstr "主题和正文不能为空"
+
+msgid "Package mailsend is not installed. Please install it first using the Install... button below"
+msgstr "mailsend 软件包未安装。请先使用下面的安装...按钮进行安装"
+
+

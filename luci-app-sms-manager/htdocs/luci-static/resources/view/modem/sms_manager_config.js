@@ -371,7 +371,248 @@ return view.extend({
 			return fs.write('/etc/modem/sms_manager_phonebook.user', formvalue.trim().replace(/\r\n/g, '\n') + '\n');
 		};
 
-		//TAB EMAIL
+		//TAB FORWARD SMS by E-MAIL
+
+		s.tab('email', _('SMS Forwarding to E-mail Settings'));
+		s.anonymous = true;
+
+        var emailProviders = {
+	        'custom': {
+		        name: _('user define'),
+		        smtp: '',
+		        port: '',
+		        security: 'tls'
+	        },
+	        'gmail': {
+		        name: 'Gmail',
+		        smtp: 'smtp.gmail.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'outlook': {
+		        name: 'Outlook.com / Hotmail',
+		        smtp: 'smtp-mail.outlook.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'yahoo': {
+		        name: 'Yahoo Mail',
+		        smtp: 'smtp.mail.yahoo.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'icloud': {
+		        name: 'iCloud Mail',
+		        smtp: 'smtp.mail.me.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'aol': {
+		        name: 'AOL Mail',
+		        smtp: 'smtp.aol.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'zoho': {
+		        name: 'Zoho Mail',
+		        smtp: 'smtp.zoho.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'mailru': {
+		        name: 'Mail.ru',
+		        smtp: 'smtp.mail.ru',
+		        port: '465',
+		        security: 'ssl'
+	        },
+	        'yandex': {
+		        name: 'Yandex.Mail',
+		        smtp: 'smtp.yandex.com',
+		        port: '465',
+		        security: 'ssl'
+	        },
+	        'gmx': {
+		        name: 'GMX Mail',
+		        smtp: 'smtp.gmx.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'mailcom': {
+		        name: 'Mail.com',
+		        smtp: 'smtp.mail.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'fastmail': {
+		        name: 'FastMail',
+		        smtp: 'smtp.fastmail.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'sina': {
+		        name: 'Sina Mail',
+		        smtp: 'smtp.sina.com',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'mailboxorg': {
+		        name: 'Mailbox.org',
+		        smtp: 'smtp.mailbox.org',
+		        port: '587',
+		        security: 'tls'
+	        },
+	        'o2pl': {
+		        name: 'o2.pl',
+		        smtp: 'poczta.o2.pl',
+		        port: '465',
+		        security: 'ssl'
+	        },
+	        'wppl': {
+		        name: 'wp.pl',
+		        smtp: 'smtp.wp.pl',
+		        port: '465',
+		        security: 'ssl'
+	        },
+	        'interia': {
+		        name: 'interia.pl',
+		        smtp: 'poczta.interia.pl',
+		        port: '465',
+		        security: 'ssl'
+	        }
+        };
+
+        o = s.taboption('email', form.Flag, 'forward_sms_enabled',
+	        _('Enable message forwarding'));
+        o.rmempty = false;
+        o.modalonly = true;
+
+        o.write = function(section_id, value) {
+	        if (value === '1') {
+		        return pkg._isPackageInstalled('mailsend').then(function(isInstalled) {
+			        if (!isInstalled) {
+				        ui.addNotification(null, E('p', {}, _('Package mailsend is not installed. Please install it first using the Install... button below')), 'info');
+				        return form.Flag.prototype.write.apply(this, [section_id, '0']);
+			        } else {
+				        return form.Flag.prototype.write.apply(this, [section_id, value]);
+			        }
+		        }.bind(this));
+	        }
+	        return form.Flag.prototype.write.apply(this, [section_id, value]);
+        };
+		
+		o = s.taboption('email', form.ListValue, 'emailprovider', _('E-mail settings'),
+			_('Select a predefined e-mail settings or enter settings manually.'));
+		
+		for (var key in emailProviders) {
+			o.value(key, emailProviders[key].name);
+		}
+		o.default = 'custom';
+		o.modalonly = true;
+		
+		o.onchange = function(ev, section_id, value) {
+			var provider = emailProviders[value] || emailProviders['custom'];
+			var map = this.map;
+			
+			// SMTP server
+			var smtpField = map.lookupOption('forward_sms_mail_smtp', section_id);
+			if (smtpField && smtpField[0]) {
+				smtpField[0].getUIElement(section_id).setValue(provider.smtp);
+			}
+			
+			// Update port
+			var portField = map.lookupOption('forward_sms_mail_smtp_port', section_id);
+			if (portField && portField[0]) {
+				portField[0].getUIElement(section_id).setValue(provider.port);
+			}
+			
+			// Update security
+			var securityField = map.lookupOption('forward_sms_mail_security', section_id);
+			if (securityField && securityField[0]) {
+				securityField[0].getUIElement(section_id).setValue(provider.security);
+			}
+		};
+	
+		o = s.taboption('email', form.Value,
+			'forward_sms_mail_recipient', _('Recipient'));
+		o.description = _('E-mail address of the recipient.');
+		o.modalonly   = true;
+
+		o = s.taboption('email', form.Value,
+			'forward_sms_mail_sender', _('Sender'));
+		o.description = _('E-mail address of the sender.');
+		o.modalonly   = true;
+
+		o = s.taboption('email', form.Value,
+		'forward_sms_mail_user', _('User'));
+		o.description = _('Username for SMTP authentication.');
+		o.modalonly   = true;
+
+		o = s.taboption('email', form.Value,
+			'forward_sms_mail_password', _('Password'));
+		o.description = _('Google app password / Password for SMTP authentication.');
+		o.password    = true;
+		o.modalonly   = true;
+
+		o = s.taboption('email', form.Value,
+			'forward_sms_mail_smtp', _('SMTP server'));
+		o.description = _('Hostname/IP address of the SMTP server.');
+		o.datatype    = 'host';
+		o.modalonly   = true;
+
+		o = s.taboption('email', form.Value,
+			'forward_sms_mail_smtp_port', _('SMTP server port'));
+		o.datatype  = 'port';
+		o.modalonly = true;
+
+		o = s.taboption('email', form.ListValue,
+			'forward_sms_mail_security', _('Security'));
+		o.description = '%s<br />%s'.format(
+			_('TLS: use STARTTLS if the server supports it.'),
+			_('SSL: SMTP over SSL.'),
+		);
+		o.value('tls', 'TLS');
+		o.value('ssl', 'SSL');
+		o.default   = 'tls';
+		o.modalonly = true;
+
+		o = s.taboption('email', form.DummyValue, '_dummy_mailsend');
+		o.rawhtml = true;
+		o.render = function() {
+			return E('div', {}, [
+				E('h3', {}, _('Required Package')),
+				E('div', { 'class': 'cbi-map-descr' }, _('The SMS forwarding option requires the mailsend package to be installed.'))
+			]);
+		};
+
+        o = s.taboption('email', form.DummyValue, '_mailsend_status', _('mailsend package'));
+        o.rawhtml = true;
+        o.cfgvalue = function(section_id) {
+	        return '';
+        };
+        o.render = function(option_index, section_id, in_table) {
+	        return pkg._isPackageInstalled('mailsend').then(function(isInstalled) {
+		        var content;
+		        
+		        if (isInstalled) {
+			        content = E('span', {
+				        'class': 'cbi-value-field',
+				        'style': 'font-style: italic;'
+			        }, _('Installed'));
+		        } else {
+			        content = E('button', {
+				        'class': 'cbi-button cbi-button-action',
+				        'click': function() {
+					        pkg.openInstallerSearch('mailsend');
+				        }
+			        }, _('Install…'));
+		        }
+		        
+		        return E('div', { 'class': 'cbi-value' }, [
+			        E('label', { 'class': 'cbi-value-title' }, _('mailsend')),
+			        E('div', { 'class': 'cbi-value-field' }, content)
+		        ]);
+	        });
+        };
 		
 		//TAB USSD
 
@@ -439,64 +680,85 @@ return view.extend({
 		s.tab('notifytab', _('Notification Settings'));
 		s.anonymous = true;
 
-		o = s.taboption('notifytab', form.Flag, 'lednotify', _('Notify new messages'),
-		_('The LED informs about a new message. Before activating this function, please config and save the SMS reading modem, time to check SMS inbox and select the notification LED.')
-		);
-		o.rmempty = false;
-		o.default = true;
-		o.write = function(section_id, value) {
-
-			uci.load('sms_manager').then(function() {
-				let portR = (uci.get('sms_manager', '@sms_manager[0]', 'readport'));
-				let dsled = (uci.get('sms_manager', '@sms_manager[0]', 'ledtype'));
-				let led = (uci.get('sms_manager', '@sms_manager[0]', 'smsled'));
-
-				if (!portR) {
-					ui.addNotification(null, E('p', {}, _('Please configure SMS reading modem first')), 'info');
-					return form.Flag.prototype.write.apply(this, [section_id, value]);
-				}
-
-				let modemNum = portR.split('/').pop();
-
-				L.resolveDefault(fs.exec_direct('/usr/bin/mmcli', ['-m', modemNum, '--messaging-list-sms']), null)
-					.then(function(res) {
-						if (res) {
-							let smsCount = 0;
-							let matches = res.matchAll(/\/SMS\/(\d+)/g);
-							for (let match of matches) {
-								smsCount++;
-							}
-
-							if (value == '1') {
-								uci.set('sms_manager', '@sms_manager[0]', 'sms_count', String(smsCount));
-								uci.set('sms_manager', '@sms_manager[0]', 'lednotify', "1");
-								uci.save();
-								fs.exec_direct('/sbin/new_cron_sms_manager.sh');
-								fs.exec_direct('/etc/init.d/sms_manager', [ 'enable' ]);
-								fs.exec('sleep 2');
-								fs.exec_direct('/etc/init.d/sms_manager', [ 'start' ]);
-							}
-
-							if (value == '0') {
-								uci.set('sms_manager', '@sms_manager[0]', 'lednotify', "0");
-								uci.save();
-								fs.exec_direct('/sbin/new_cron_sms_manager.sh');
-								fs.exec_direct('/etc/init.d/sms_manager', [ 'stop' ]);
-								fs.exec('sleep 2');
-								fs.exec_direct('/etc/init.d/sms_manager', [ 'disable' ]);
-								fs.exec_direct('/etc/init.d/sms_manager', [ 'disable' ]);
-								if (dsled == 'D' && led) {
-									fs.write('/sys/class/leds/'+led+'/brightness', '0');
-								}
-								fs.exec('sleep 2');
-								fs.exec_direct('/sbin/force_cron_refresh.sh');
-							}
-						}
-				});
-			});
-			
-			return form.Flag.prototype.write.apply(this, [section_id, value]);
-		};
+        o = s.taboption('notifytab', form.Flag, 'lednotify', _('Notify new messages'),
+	        _('The LED informs about a new message. Before activating this function, please config and save the SMS reading modem, time to check SMS inbox and select the notification LED.')
+        );
+        o.rmempty = false;
+        o.default = true;
+        o.write = function(section_id, value) {
+	        uci.load('sms_manager').then(function() {
+		        let portR = (uci.get('sms_manager', '@sms_manager[0]', 'readport'));
+		        let dsled = (uci.get('sms_manager', '@sms_manager[0]', 'ledtype'));
+		        let led = (uci.get('sms_manager', '@sms_manager[0]', 'smsled'));
+		        if (!portR) {
+			        ui.addNotification(null, E('p', {}, _('Please configure SMS reading modem first')), 'info');
+			        return form.Flag.prototype.write.apply(this, [section_id, value]);
+		        }
+		        let modemNum = portR.split('/').pop();
+		        L.resolveDefault(fs.exec_direct('/usr/bin/mmcli', ['-m', modemNum, '--messaging-list-sms']), null)
+			        .then(function(res) {
+				        if (res) {
+					        let smsCount = 0;
+					        let matches = res.matchAll(/\/SMS\/(\d+)/g);
+					        for (let match of matches) {
+						        smsCount++;
+					        }
+					        if (value == '1') {
+						        uci.set('sms_manager', '@sms_manager[0]', 'sms_count', String(smsCount));
+						        uci.set('sms_manager', '@sms_manager[0]', 'lednotify', "1");
+						        uci.save();
+						        
+						        let PTR = uci.get('sms_manager', '@sms_manager[0]', 'prestart');
+						        
+						        L.resolveDefault(fs.read('/etc/crontabs/root'), '').then(function(crontab) {
+							        let cronEntry = '1 */' + PTR + ' * * *  /etc/init.d/sms_manager enable && /etc/init.d/sms_manager restart';
+                                        
+                                    let lines = (crontab || '').trim().split('\n').filter(function(line) {
+                                        return line.trim() !== '' && !line.includes('/etc/init.d/sms_manager');
+                                    });
+                                        
+                                        lines.push(cronEntry);
+                                        
+                                    let newCrontab = lines.join('\n') + '\n';
+                                        
+                                    fs.write('/etc/crontabs/root', newCrontab).then(function() {
+                                        fs.exec_direct('/etc/init.d/cron', ['restart']);
+                                    });
+                                });
+						        
+						        fs.exec_direct('/etc/init.d/sms_manager', [ 'enable' ]);
+						        fs.exec('sleep 2');
+						        fs.exec_direct('/etc/init.d/sms_manager', [ 'start' ]);
+					        }
+					        if (value == '0') {
+						        uci.set('sms_manager', '@sms_manager[0]', 'lednotify', "0");
+						        uci.save();
+						        
+						        L.resolveDefault(fs.read('/etc/crontabs/root'), '').then(function(crontab) {
+							        let lines = (crontab || '').trim().replace(/\r\n/g, '\n').split('\n');
+							        let filteredLines = lines.filter(function(line) {
+								        return line.trim() !== '' && !line.includes('sms_manager');
+							        });
+							        let newCrontab = filteredLines.join('\n') + '\n';
+							        
+							        fs.write('/etc/crontabs/root', newCrontab).then(function() {
+								        fs.exec_direct('/etc/init.d/cron', ['restart']);
+							        });
+						        });
+						        
+						        fs.exec_direct('/etc/init.d/sms_manager', [ 'stop' ]);
+						        fs.exec('sleep 2');
+						        fs.exec_direct('/etc/init.d/sms_manager', [ 'disable' ]);
+						        if (dsled == 'D' && led) {
+							        fs.write('/sys/class/leds/'+led+'/brightness', '0');
+						        }
+					        }
+				        }
+		        });
+	        });
+	        
+	        return form.Flag.prototype.write.apply(this, [section_id, value]);
+        };
 
 		o = s.taboption('notifytab', form.Value, 'checktime', _('Check inbox every minute(s)'),
 			_('Specify how many minutes you want your inbox to be checked.'));

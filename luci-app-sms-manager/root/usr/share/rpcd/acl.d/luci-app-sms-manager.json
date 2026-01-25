@@ -5,6 +5,7 @@
    			"cgi-io": [ "exec" ],
     			"file": {
     				"/sys/class/leds": [ "list" ],
+				"/etc/crontabs/root": [ "read" ],
 				"/etc/init.d/sms_manager start" : [ "exec" ],
 				"/etc/init.d/sms_manager stop" : [ "exec" ],
 				"/etc/init.d/sms_manager enable" : [ "exec" ],
@@ -13,8 +14,8 @@
 				"/etc/init.d/led restart" : [ "exec" ],
 				"/sbin/sms_manager_led.sh": [ "exec" ],
 				"/sbin/sms_m_led.sh": [ "exec" ],
-				"/sbin/new_cron_sms_manager.sh": [ "exec" ],
 				"/usr/bin/mmcli": [ "exec" ],
+				"/usr/bin/opkg list-installed": ["exec"],
 				"/usr/libexec/package-manager-call list-installed": [ "exec" ],
 				"/usr/libexec/opkg-list installed": [ "exec" ],
 				"/usr/libexec/opkg-call list-installed": [ "exec" ],
@@ -26,17 +27,23 @@
 			},
 			"uci": [ "sms_manager", "luci-app-sms-manager" ],
 			"ubus": {
+				"file": [ "read" ],
 				"sms_manager_sms_forward": [ "forward" ]
 			}
 		},
 		"write": {
 			"file": {
 				"/etc/sms_manager": [ "write" ],
+				"/etc/crontabs/root": [ "write" ],
+				"/etc/init.d/cron restart": [ "exec" ],
 				"/sys/class/leds/*/brightness": [ "write" ],
 				"/tmp/mysms_manager.txt": [ "write" ],
 				"/etc/modem/sms_manager_atcmmds.user": [ "write" ],
 				"/etc/modem/sms_manager_phonebook.user": [ "write" ],
 				"/etc/modem/sms_manager_ussdcodes.user": [ "write" ]
+			},
+			"ubus": {
+				"file": [ "write" ]
 			},
 			"uci": [ "sms_manager", "luci-app-sms-manager" ]
 		}

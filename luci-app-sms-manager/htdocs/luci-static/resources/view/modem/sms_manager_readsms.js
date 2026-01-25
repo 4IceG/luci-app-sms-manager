@@ -13,6 +13,16 @@
 	Licensed to the GNU General Public License v3.0.
 */
 
+var callForwardSMS = rpc.declare({
+	object: 'sms_manager_sms_forward',
+	method: 'forward',
+	params: ['subject', 'message']
+});
+
+function popTimeout(a, message, timeout, severity) {
+    ui.addTimeLimitedNotification(a, message, timeout, severity);
+}
+
 return view.extend({
 	load: function() {
 		document.head.append(E('style', {'type': 'text/css'},
@@ -162,6 +172,138 @@ return view.extend({
 		});
 	},
 
+	handleForward: function(ev) {
+		let checked = document.querySelectorAll('input[name="smsn"]:checked');
+		
+		if (checked.length === 0) {
+			ui.addNotification(null, E('p', _('Please select the message(s) to be forwarded')), 'info');
+			return;
+		}
+		
+		let self = this;
+		
+		uci.load('sms_manager').then(function() {
+			let fwdEnabled = uci.get('sms_manager', '@sms_manager[0]', 'forward_sms_enabled');
+			
+			if (fwdEnabled !== '1') {
+				ui.addNotification(null, E('p', _('SMS forwarding function is not enabled')), 'info');
+				return;
+			}
+			
+			let emailSubject = '';
+			let emailBody = '';
+
+			if (checked.length === 1) {
+				let row = checked[0].closest('tr');
+				let cells = row.cells;
+				
+				let sender = cells[1].textContent.trim();
+				let timestamp = cells[2].textContent.trim();
+				let message = cells[3].textContent.trim();
+				
+				emailSubject = 'SMS ' + timestamp + ' - ' + sender;
+				emailBody = message;
+				
+				self.showEmailModal(emailSubject, emailBody);
+			} 
+			else {
+				uci.load('system').then(function() {
+					let hostname = uci.get('system', '@system[0]', 'hostname') || _('My Router');
+					
+					let messages = [];
+					checked.forEach(function(checkbox) {
+						let row = checkbox.closest('tr');
+						let cells = row.cells;
+						
+						let timestamp = cells[2].textContent.trim();
+						let sender = cells[1].textContent.trim();
+						let message = cells[3].textContent.trim();
+						
+						messages.push(timestamp + ' - ' + sender + '\n' + message);
+					});
+					
+					let emailBody = messages.join('\n\n');
+					
+					self.showEmailModal(hostname, emailBody);
+				});
+			}
+		});
+	},
+
+	showEmailModal: function(defaultSubject, defaultBody) {
+		let self = this;
+		
+		ui.showModal(_('Forward SMS to E-mail'), [
+			E('p', _('Subject:')),
+			E('input', {
+				'type': 'text',
+				'id': 'email-subject',
+				'class': 'cbi-input-text',
+				'style': 'width: 100% !important; margin-bottom: 15px;',
+				'value': defaultSubject
+			}),
+			E('p', _('Message text:')),
+			E('textarea', {
+				'id': 'email-body',
+				'class': 'cbi-input-textarea',
+				'style': 'width: 100% !important; height: 30vh; min-height: 250px;',
+				'wrap': 'off',
+				'spellcheck': 'false'
+			}, defaultBody),
+			E('div', { 'class': 'right' }, [
+				E('button', {
+					'class': 'btn',
+					'click': ui.hideModal
+				}, _('Cancel')), ' ',
+				E('button', {
+					'class': 'cbi-button cbi-button-action important',
+					'click': ui.createHandlerFn(this, 'sendEmailFromModal')
+				}, _('Send'))
+			])
+		], 'cbi-modal');
+	},
+
+	sendEmailFromModal: function() {
+		let subject = document.getElementById('email-subject').value;
+		let body = document.getElementById('email-body').value;
+		
+		if (!subject || !body) {
+			ui.addNotification(null, E('p', _('Subject and body cannot be empty')), 'error');
+			return;
+		}
+		
+		let self = this;
+		
+		ui.hideModal();
+		
+		let contentArea = document.getElementById('forward-status');
+		contentArea.style.display = 'block';
+		contentArea.innerHTML = '';
+		contentArea.appendChild(E('div', {'class': 'alert alert-info'}, 
+			E('span', {'class': 'spinning'}, _('Sending e-mail...'))
+		));
+		
+		callForwardSMS(subject, body).then(function(response) {
+			contentArea.innerHTML = '';
+			if (response.success) {
+			    popTimeout(null, E('p', _('Message forwarded successfully')), 5000, 'info');
+				setTimeout(function() {
+					if (contentArea) {
+						contentArea.innerHTML = '';
+						contentArea.style.display = 'none';
+					}
+				}, 5000);
+			} else {
+				contentArea.innerHTML = '';
+				contentArea.style.display = 'none';
+				ui.addNotification(null, E('p', _('Failed to forward message: %s').format(response.error || 'Unknown error')), 'error');
+			}
+		}).catch(function(err) {
+			contentArea.innerHTML = '';
+			contentArea.style.display = 'none';
+			ui.addNotification(null, E('p', _('Error sending e-mail: %s').format(err.message || 'Unknown error')), 'error');
+		});
+	},
 
 	handleSelect: function(ev) {
 		let checked = ev.target.checked;
@@ -436,12 +578,20 @@ return view.extend({
 					])
 				]),
 
+				E('div', {'id': 'forward-status', 'style': 'margin: 10px 0; display: none;'}),
+
 				E('div', { 'class': 'right' }, [
+					E('button', {
+						'class': 'cbi-button cbi-button-apply',
+						'id': 'forward',
+						'click': ui.createHandlerFn(self, 'handleForward')
+					}, [ _('Forward SMS') ]),
+					'\xa0\xa0\xa0',
 					E('button', {
 						'class': 'cbi-button cbi-button-remove',
 						'id': 'execute',
 						'click': ui.createHandlerFn(self, 'handleDelete')
-					}, [ _('Delete message(s)') ]),
+					}, [ _('Delete') ]),
 					'\xa0\xa0\xa0',
 					E('button', {
 						'class': 'cbi-button cbi-button-add',

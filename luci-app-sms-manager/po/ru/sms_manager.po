@@ -1,9 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: luci-app-sms-manager\n"
-"Language-Team: Rafał Wabik (IceG)\n"
 "Language: ru\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
@@ -498,3 +495,129 @@ msgstr "Название <abbr title=\"Светодиод\">LED</abbr>"
 
 msgid "Select the notification LED."
 msgstr "Выберите светодиод уведомлений."
+
+msgid "SMS Forwarding to E-mail Settings"
+msgstr "Настройки пересылки SMS на e-mail"
+
+msgid "An e-mail will be sent.."
+msgstr "Будет отправлено электронное письмо.."
+
+msgid "Enable message forwarding"
+msgstr "Включить пересылку сообщений"
+
+msgid "E-mail settings"
+msgstr "Настройки e-mail"
+
+msgid "Select a predefined e-mail settings or enter settings manually."
+msgstr "Выберите предопределенные настройки e-mail или введите настройки вручную."
+
+msgid "Recipient"
+msgstr "Получатель"
+
+msgid "E-mail address of the recipient."
+msgstr "Адрес электронной почты получателя."
+
+msgid "E-mail address of the sender."
+msgstr "Адрес электронной почты отправителя."
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "Username for SMTP authentication."
+msgstr "Имя пользователя для аутентификации SMTP."
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Google app password / Password for SMTP authentication."
+msgstr "Пароль приложения Google / Пароль для аутентификации SMTP."
+
+msgid "SMTP server"
+msgstr "SMTP-сервер"
+
+msgid "Hostname/IP address of the SMTP server."
+msgstr "Имя хоста/IP-адрес SMTP-сервера."
+
+msgid "SMTP server port"
+msgstr "Порт SMTP-сервера"
+
+msgid "Security"
+msgstr "Безопасность"
+
+msgid "TLS: use STARTTLS if the server supports it."
+msgstr "TLS: использовать STARTTLS, если сервер это поддерживает."
+
+msgid "SSL: SMTP over SSL."
+msgstr "SSL: SMTP через SSL."
+
+msgid "Required Package"
+msgstr "Требуемый пакет"
+
+msgid "The SMS forwarding option requires the mailsend package to be installed."
+msgstr "Опция пересылки SMS требует установки пакета mailsend."
+
+msgid "Check required packages"
+msgstr "Проверить требуемые пакеты"
+
+msgid "Check"
+msgstr "Проверить"
+
+msgid "Mailsend Package"
+msgstr "Пакет mailsend"
+
+msgid "Loading package data…"
+msgstr "Загрузка данных пакета…"
+
+msgid "Installed"
+msgstr "Установлен"
+
+msgid "Install…"
+msgstr "Установить…"
+
+msgid "Please select exactly one message to forward"
+msgstr "Пожалуйста, выберите ровно одно сообщение для пересылки"
+
+msgid "Forward selected message to e-mail?"
+msgstr "Переслать выбранное сообщение на e-mail?"
+
+msgid "Sending e-mail..."
+msgstr "Отправка электронного письма..."
+
+msgid "Message forwarded successfully"
+msgstr "Сообщение успешно переслано"
+
+msgid "Failed to forward message: %s"
+msgstr "Не удалось переслать сообщение: %s"
+
+msgid "Error: %s"
+msgstr "Ошибка: %s"
+
+msgid "user define"
+msgstr "определено пользователем"
+
+msgid "Forward SMS"
+msgstr "Переслать"
+
+msgid "Please select the message(s) to be forwarded"
+msgstr "Пожалуйста, выберите сообщение(-я) для пересылки"
+
+msgid "SMS forwarding function is not enabled. Please configure it first"
+msgstr "Функция пересылки SMS не включена. Пожалуйста, сначала настройте ее"
+
+msgid "My Router"
+msgstr "Мой роутер"
+
+msgid "Forward SMS to E-mail"
+msgstr "Переслать SMS на e-mail"
+
+msgid "Subject:"
+msgstr "Тема:"
+
+msgid "Message text:"
+msgstr "Текст сообщения:"
+
+msgid "Subject and body cannot be empty"
+msgstr "Тема и текст не могут быть пустыми"
+
+msgid "Package mailsend is not installed. Please install it first using the Install... button below"
+msgstr "Пакет mailsend не установлен. Пожалуйста, сначала установите его с помощью кнопки Установить... ниже"
