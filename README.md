@@ -37,7 +37,7 @@ This is a development version of the package, so not everything may work....
 
 ![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm1%20Configuration%20ZBT%20LuCI.png?raw=true)
 ![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm2%20Configuration%20ZBT%20LuCI.png?raw=true)
-![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm3%20Configuration%20ZBT%20LuCI.png?raw=true)
+![]()
 ![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm4%20Configuration%20ZBT%20LuCI.png?raw=true)
 ![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm5%20Configuration%20ZBT%20LuCI.png?raw=true)
 ![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm6%20Configuration%20ZBT%20LuCI.png?raw=true)
