@@ -710,6 +710,8 @@ return view.extend({
 						        
 						        let PTR = uci.get('sms_manager', '@sms_manager[0]', 'prestart');
 						        
+						      	fs.exec('sleep 4');
+						        
 						        L.resolveDefault(fs.read('/etc/crontabs/root'), '').then(function(crontab) {
 							        let cronEntry = '1 */' + PTR + ' * * *  /etc/init.d/sms_manager enable && /etc/init.d/sms_manager restart';
                                         
@@ -717,11 +719,12 @@ return view.extend({
                                         return line.trim() !== '' && !line.includes('/etc/init.d/sms_manager');
                                     });
                                         
-                                        lines.push(cronEntry);
+                                    lines.push(cronEntry);
                                         
                                     let newCrontab = lines.join('\n') + '\n';
                                         
                                     fs.write('/etc/crontabs/root', newCrontab).then(function() {
+                                    	fs.exec('sleep 2');
                                         fs.exec_direct('/etc/init.d/cron', ['restart']);
                                     });
                                 });
@@ -733,7 +736,9 @@ return view.extend({
 					        if (value == '0') {
 						        uci.set('sms_manager', '@sms_manager[0]', 'lednotify', "0");
 						        uci.save();
-						        
+
+						      	fs.exec('sleep 4');
+
 						        L.resolveDefault(fs.read('/etc/crontabs/root'), '').then(function(crontab) {
 							        let lines = (crontab || '').trim().replace(/\r\n/g, '\n').split('\n');
 							        let filteredLines = lines.filter(function(line) {
@@ -742,6 +747,7 @@ return view.extend({
 							        let newCrontab = filteredLines.join('\n') + '\n';
 							        
 							        fs.write('/etc/crontabs/root', newCrontab).then(function() {
+						                fs.exec('sleep 2');
 								        fs.exec_direct('/etc/init.d/cron', ['restart']);
 							        });
 						        });
