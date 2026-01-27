@@ -17,7 +17,9 @@ This is a development version of the package, so not everything may work....
 
 > "Received Messages" window / Okno odebranych wiadomości:
 
-![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/Received%20Messages.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm1l.png?raw=true)
+
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm2l.png?raw=true)
 
 > "Sending Message" window / Okno wysyłania wiadomości:
 
@@ -29,18 +31,20 @@ This is a development version of the package, so not everything may work....
 
 > "AT Commands" window / Okno poleceń AT:
 
-![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/AT%20Commands.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm%20AT%20Commands%20ZBT%20LuCI.png?raw=true)
 
 > "Configuration" window / Okno konfiguracji:
 
-![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/Configuration1.png?raw=true)
-![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/Configuration2.png?raw=true)
-![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/Configuration3.png?raw=true)
-![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/Configuration4.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm1%20Configuration%20ZBT%20LuCI.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm2%20Configuration%20ZBT%20LuCI.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm3%20Configuration%20ZBT%20LuCI.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm4%20Configuration%20ZBT%20LuCI.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm5%20Configuration%20ZBT%20LuCI.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm6%20Configuration%20ZBT%20LuCI.png?raw=true)
 
 > "Package update and support" window / Okno aktualizacji pakietu i wsparcia:
 
-![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/Package%20update%20and%20support.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/sms-manager/sms_manager_last/smsm7%20Package%20update%20and%20support%20ZBT%20LuCI.png?raw=true)
 
 
 
