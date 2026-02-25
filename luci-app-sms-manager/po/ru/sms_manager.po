@@ -621,3 +621,207 @@ msgstr "Тема и текст не могут быть пустыми"
 
 msgid "Package mailsend is not installed. Please install it first using the Install... button below"
 msgstr "Пакет mailsend не установлен. Пожалуйста, сначала установите его с помощью кнопки Установить... ниже"
+
+msgid "Select modem"
+msgstr "Выбрать модем"
+
+msgid "Changing a modem requires refreshing the messages"
+msgstr "Смена модема требует обновления сообщений"
+
+msgid "Defined AT command files"
+msgstr "Определённые файлы AT-команд"
+
+msgid "Error loading AT commands file: "
+msgstr "Ошибка загрузки файла AT-команд: "
+
+msgid "Select file with AT commands to load"
+msgstr "Выберите файл с AT-командами для загрузки"
+
+msgid "No AT commands available"
+msgstr "Нет доступных AT-команд"
+
+msgid "Error loading initial AT commands file:"
+msgstr "Ошибка загрузки начального файла AT-команд:"
+
+msgid "Error loading USSD codes file: "
+msgstr "Ошибка загрузки файла кодов USSD: "
+
+msgid "Error loading initial USSD file:"
+msgstr "Ошибка загрузки начального файла USSD:"
+
+msgid "Select file with USSD codes to load"
+msgstr "Выберите файл с кодами USSD для загрузки"
+
+msgid "No USSD codes available"
+msgstr "Нет доступных кодов USSD"
+
+msgid "Defined USSD code files"
+msgstr "Определённые файлы кодов USSD"
+
+msgid "File uploaded and saved to"
+msgstr "Файл загружен и сохранён в"
+
+msgid "Unable to upload file"
+msgstr "Не удаётся загрузить файл"
+
+msgid "Phonebook saved successfully"
+msgstr "Телефонная книга успешно сохранена"
+
+msgid "Unable to save the file"
+msgstr "Не удаётся сохранить файл"
+
+msgid "filename.user"
+msgstr "имяфайла.user"
+
+msgid "Select or create a file to edit..."
+msgstr "Выберите или создайте файл для редактирования..."
+
+msgid "Please enter a file name"
+msgstr "Пожалуйста, введите имя файла"
+
+msgid "File created successfully"
+msgstr "Файл успешно создан"
+
+msgid "Unable to create file"
+msgstr "Не удаётся создать файл"
+
+msgid "Please select a file to delete"
+msgstr "Пожалуйста, выберите файл для удаления"
+
+msgid "Are you sure you want to delete this file?"
+msgstr "Вы уверены, что хотите удалить этот файл?"
+
+msgid "File deleted successfully"
+msgstr "Файл успешно удалён"
+
+msgid "Unable to delete file"
+msgstr "Не удаётся удалить файл"
+
+msgid "Please select or create a file first"
+msgstr "Сначала выберите или создайте файл"
+
+msgid "File saved successfully"
+msgstr "Файл успешно сохранён"
+
+msgid "Unable to save file"
+msgstr "Не удаётся сохранить файл"
+
+msgid "Load .user file"
+msgstr "Загрузить файл .user"
+
+msgid "Save .user file"
+msgstr "Сохранить файл .user"
+
+msgid "Manage contacts"
+msgstr "Управление контактами"
+
+msgid "Edit User Contacts"
+msgstr "Редактировать контакты пользователя"
+
+msgid "Manage USSD codes"
+msgstr "Управление кодами USSD"
+
+msgid "Manage User USSD Codes"
+msgstr "Управление кодами USSD пользователя"
+
+msgid "Each line must have the following format: 'Code description;code'. For user convenience, files are saved to <code>/etc/modem/sms_manager_ussdcodes/</code>."
+msgstr "Каждая строка должна иметь следующий формат: 'Описание кода;код'. Для удобства пользователя файлы сохраняются в <code>/etc/modem/sms_manager_ussdcodes/</code>."
+
+msgid "Each line must have the following format: 'AT command description;AT command'. For user convenience, files are saved to <code>/etc/modem/sms_manager_atcmmds/</code>."
+msgstr "Каждая строка должна иметь следующий формат: 'Описание AT-команды;AT-команда'. Для удобства пользователя файлы сохраняются в <code>/etc/modem/sms_manager_atcmmds/</code>."
+
+msgid "Manage AT commands"
+msgstr "Управление AT-командами"
+
+msgid "Manage User AT Commands"
+msgstr "Управление AT-командами пользователя"
+
+msgid "-- Select file --"
+msgstr "-- Выбрать файл --"
+
+msgid "Select file"
+msgstr "Выбрать файл"
+
+msgid "New file name"
+msgstr "Имя нового файла"
+
+msgid "Delete selected file"
+msgstr "Удалить выбранный файл"
+
+msgid "Show notification icon"
+msgstr "Показать значок уведомления"
+
+msgid "Show the new message notification icon on the status overview page."
+msgstr "Показать значок уведомления о новых сообщениях на странице обзора статуса."
+
+msgid "Loading..."
+msgstr "Загрузка..."
+
+msgid "Modem"
+msgstr "Модем"
+
+msgid "Modems"
+msgstr "Модем(-ы)"
+
+msgid "Signal Quality"
+msgstr "Качество сигнала"
+
+msgid "Align preview to:"
+msgstr "Выровнять предпросмотр по:"
+
+msgid "Left"
+msgstr "Левому краю"
+
+msgid "Center"
+msgstr "Центру"
+
+msgid "Right"
+msgstr "Правому краю"
+
+msgid "New message information block settings"
+msgstr "Настройки блока информации о новых сообщениях"
+
+msgid "Alignment settings saved successfully"
+msgstr "Настройки выравнивания успешно сохранены"
+
+msgid "SMS Info"
+msgstr "Инфо SMS"
+
+msgid "New SMS"
+msgstr "Новое(-ые) SMS"
+
+msgid "No new SMS"
+msgstr "Нет новых SMS"
+
+msgid "Deleting files"
+msgstr "Удаление файлов"
+
+msgid "Delete all files"
+msgstr "Удалить все файлы"
+
+msgid "Load .gz archive"
+msgstr "Загрузить архив .gz"
+
+msgid "Save .gz archive"
+msgstr "Сохранить архив .gz"
+
+msgid "Failed to extract archive"
+msgstr "Не удалось распаковать архив"
+
+msgid "Archive extracted to"
+msgstr "Архив распакован в"
+
+msgid "Upload error"
+msgstr "Ошибка загрузки"
+
+msgid "Failed to create archive"
+msgstr "Не удалось создать архив"
+
+msgid "Failed to read archive"
+msgstr "Не удалось прочитать архив"
+
+msgid "Are you sure you want to delete all files in the folder?"
+msgstr "Вы уверены, что хотите удалить все файлы в папке?"
+
+msgid "All files deleted successfully"
+msgstr "Все файлы успешно удалены"

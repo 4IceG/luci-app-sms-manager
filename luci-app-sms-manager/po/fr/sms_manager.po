@@ -621,3 +621,207 @@ msgstr "L'objet et le corps ne peuvent pas être vides"
 
 msgid "Package mailsend is not installed. Please install it first using the Install... button below"
 msgstr "Le paquet mailsend n'est pas installé. Veuillez d'abord l'installer en utilisant le bouton Installer... ci-dessous"
+
+msgid "Select modem"
+msgstr "Sélectionner le modem"
+
+msgid "Changing a modem requires refreshing the messages"
+msgstr "Le changement de modem nécessite l'actualisation des messages"
+
+msgid "Defined AT command files"
+msgstr "Fichiers de commandes AT définis"
+
+msgid "Error loading AT commands file: "
+msgstr "Erreur lors du chargement du fichier de commandes AT : "
+
+msgid "Select file with AT commands to load"
+msgstr "Sélectionner le fichier de commandes AT à charger"
+
+msgid "No AT commands available"
+msgstr "Aucune commande AT disponible"
+
+msgid "Error loading initial AT commands file:"
+msgstr "Erreur lors du chargement du fichier de commandes AT initial :"
+
+msgid "Error loading USSD codes file: "
+msgstr "Erreur lors du chargement du fichier de codes USSD : "
+
+msgid "Error loading initial USSD file:"
+msgstr "Erreur lors du chargement du fichier USSD initial :"
+
+msgid "Select file with USSD codes to load"
+msgstr "Sélectionner le fichier de codes USSD à charger"
+
+msgid "No USSD codes available"
+msgstr "Aucun code USSD disponible"
+
+msgid "Defined USSD code files"
+msgstr "Fichiers de codes USSD définis"
+
+msgid "File uploaded and saved to"
+msgstr "Fichier téléversé et enregistré dans"
+
+msgid "Unable to upload file"
+msgstr "Impossible de téléverser le fichier"
+
+msgid "Phonebook saved successfully"
+msgstr "Répertoire téléphonique enregistré avec succès"
+
+msgid "Unable to save the file"
+msgstr "Impossible d'enregistrer le fichier"
+
+msgid "filename.user"
+msgstr "nomfichier.user"
+
+msgid "Select or create a file to edit..."
+msgstr "Sélectionner ou créer un fichier à modifier..."
+
+msgid "Please enter a file name"
+msgstr "Veuillez entrer un nom de fichier"
+
+msgid "File created successfully"
+msgstr "Fichier créé avec succès"
+
+msgid "Unable to create file"
+msgstr "Impossible de créer le fichier"
+
+msgid "Please select a file to delete"
+msgstr "Veuillez sélectionner un fichier à supprimer"
+
+msgid "Are you sure you want to delete this file?"
+msgstr "Êtes-vous sûr de vouloir supprimer ce fichier ?"
+
+msgid "File deleted successfully"
+msgstr "Fichier supprimé avec succès"
+
+msgid "Unable to delete file"
+msgstr "Impossible de supprimer le fichier"
+
+msgid "Please select or create a file first"
+msgstr "Veuillez d'abord sélectionner ou créer un fichier"
+
+msgid "File saved successfully"
+msgstr "Fichier enregistré avec succès"
+
+msgid "Unable to save file"
+msgstr "Impossible d'enregistrer le fichier"
+
+msgid "Load .user file"
+msgstr "Charger le fichier .user"
+
+msgid "Save .user file"
+msgstr "Enregistrer le fichier .user"
+
+msgid "Manage contacts"
+msgstr "Gérer les contacts"
+
+msgid "Edit User Contacts"
+msgstr "Modifier les contacts utilisateur"
+
+msgid "Manage USSD codes"
+msgstr "Gérer les codes USSD"
+
+msgid "Manage User USSD Codes"
+msgstr "Gérer les codes USSD de l'utilisateur"
+
+msgid "Each line must have the following format: 'Code description;code'. For user convenience, files are saved to <code>/etc/modem/sms_manager_ussdcodes/</code>."
+msgstr "Chaque ligne doit avoir le format suivant : 'Description du code;code'. Pour la commodité de l'utilisateur, les fichiers sont enregistrés dans <code>/etc/modem/sms_manager_ussdcodes/</code>."
+
+msgid "Each line must have the following format: 'AT command description;AT command'. For user convenience, files are saved to <code>/etc/modem/sms_manager_atcmmds/</code>."
+msgstr "Chaque ligne doit avoir le format suivant : 'Description de la commande AT;commande AT'. Pour la commodité de l'utilisateur, les fichiers sont enregistrés dans <code>/etc/modem/sms_manager_atcmmds/</code>."
+
+msgid "Manage AT commands"
+msgstr "Gérer les commandes AT"
+
+msgid "Manage User AT Commands"
+msgstr "Gérer les commandes AT de l'utilisateur"
+
+msgid "-- Select file --"
+msgstr "-- Sélectionner un fichier --"
+
+msgid "Select file"
+msgstr "Sélectionner un fichier"
+
+msgid "New file name"
+msgstr "Nom du nouveau fichier"
+
+msgid "Delete selected file"
+msgstr "Supprimer le fichier sélectionné"
+
+msgid "Show notification icon"
+msgstr "Afficher l'icône de notification"
+
+msgid "Show the new message notification icon on the status overview page."
+msgstr "Afficher l'icône de notification de nouveau message sur la page de vue d'ensemble de l'état."
+
+msgid "Loading..."
+msgstr "Chargement..."
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Modems"
+msgstr "Modem(s)"
+
+msgid "Signal Quality"
+msgstr "Qualité du signal"
+
+msgid "Align preview to:"
+msgstr "Aligner l'aperçu à :"
+
+msgid "Left"
+msgstr "Gauche"
+
+msgid "Center"
+msgstr "Centre"
+
+msgid "Right"
+msgstr "Droite"
+
+msgid "New message information block settings"
+msgstr "Paramètres du bloc d'information des nouveaux messages"
+
+msgid "Alignment settings saved successfully"
+msgstr "Paramètres d'alignement enregistrés avec succès"
+
+msgid "SMS Info"
+msgstr "Info SMS"
+
+msgid "New SMS"
+msgstr "Nouveau(x) SMS"
+
+msgid "No new SMS"
+msgstr "Aucun nouveau SMS"
+
+msgid "Deleting files"
+msgstr "Suppression des fichiers"
+
+msgid "Delete all files"
+msgstr "Supprimer tous les fichiers"
+
+msgid "Load .gz archive"
+msgstr "Charger l'archive .gz"
+
+msgid "Save .gz archive"
+msgstr "Enregistrer l'archive .gz"
+
+msgid "Failed to extract archive"
+msgstr "Échec de l'extraction de l'archive"
+
+msgid "Archive extracted to"
+msgstr "Archive extraite dans"
+
+msgid "Upload error"
+msgstr "Erreur de téléversement"
+
+msgid "Failed to create archive"
+msgstr "Échec de la création de l'archive"
+
+msgid "Failed to read archive"
+msgstr "Échec de la lecture de l'archive"
+
+msgid "Are you sure you want to delete all files in the folder?"
+msgstr "Êtes-vous sûr de vouloir supprimer tous les fichiers du dossier ?"
+
+msgid "All files deleted successfully"
+msgstr "Tous les fichiers supprimés avec succès"

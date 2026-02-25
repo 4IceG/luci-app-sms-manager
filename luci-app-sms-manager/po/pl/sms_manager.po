@@ -627,3 +627,213 @@ msgstr "Temat i treść nie mogą być puste"
 
 msgid "Package mailsend is not installed. Please install it first using the Install... button below"
 msgstr "Pakiet mailsend nie jest zainstalowany. Proszę najpierw go zainstalować, używając np. przycisku Instaluj... poniżej"
+
+msgid "Select modem"
+msgstr "Wybierz modem"
+
+msgid "Changing a modem requires refreshing the messages"
+msgstr "Zmiana modemu wymaga odświeżenia wiadomości"
+
+msgid "Defined AT command files"
+msgstr "Zdefiniowane pliki poleceń AT"
+
+msgid "Error loading AT commands file: "
+msgstr "Błąd wczytywania pliku z poleceniami AT: "
+
+msgid "Select file with AT commands to load"
+msgstr "Wybierz plik z poleceniami AT do wczytania"
+
+msgid "Error loading AT commands file: "
+msgstr "Błąd wczytywania pliku poleceń AT: "
+
+msgid "No AT commands available"
+msgstr "Brak dostępnych poleceń AT"
+
+msgid "Error loading initial AT commands file:"
+msgstr "Błąd wczytywania początkowego pliku poleceń AT:"
+
+msgid "Error loading USSD codes file: "
+msgstr "Błąd wczytywania pliku kodów USSD: "
+
+msgid "Error loading initial USSD file:"
+msgstr "Błąd wczytywania początkowego pliku USSD:"
+
+msgid "Select file with USSD codes to load"
+msgstr "Wybierz plik z kodami USSD do wczytania"
+
+msgid "No USSD codes available"
+msgstr "Brak dostępnych kodów USSD"
+
+msgid "Defined USSD code files" 
+msgstr "Zdefiniowane pliki kodów USSD"
+
+msgid "File uploaded and saved to"
+msgstr "Plik przesłany i zapisany w"
+
+msgid "Unable to upload file"
+msgstr "Nie można przesłać pliku"
+
+msgid "Phonebook saved successfully"
+msgstr "Książka telefoniczna została pomyślnie zapisana"
+
+msgid "Unable to save the file"
+msgstr "Nie można zapisać pliku"
+
+msgid "filename.user"
+msgstr "nazwapliku.user"
+
+msgid "Select or create a file to edit..."
+msgstr "Wybierz lub utwórz plik do edycji..."
+
+msgid "Please enter a file name"
+msgstr "Proszę podać nazwę pliku"
+
+msgid "File created successfully"
+msgstr "Plik został pomyślnie utworzony"
+
+msgid "Unable to create file"
+msgstr "Nie można utworzyć pliku"
+
+msgid "Please select a file to delete"
+msgstr "Proszę wybrać plik do usunięcia"
+
+msgid "Are you sure you want to delete this file?"
+msgstr "Czy na pewno chcesz usunąć ten plik?"
+
+msgid "File deleted successfully"
+msgstr "Plik został pomyślnie usunięty"
+
+msgid "Unable to delete file"
+msgstr "Nie można usunąć pliku"
+
+msgid "Please select or create a file first"
+msgstr "Najpierw wybierz lub utwórz plik"
+
+msgid "File saved successfully"
+msgstr "Plik został pomyślnie zapisany"
+
+msgid "Unable to save file"
+msgstr "Nie można zapisać pliku"
+
+msgid "Load .user file"
+msgstr "Załaduj plik .user"
+
+msgid "Save .user file"
+msgstr "Zapisz plik .user"
+
+msgid "Manage contacts"
+msgstr "Zarządzaj kontaktami"
+
+msgid "Edit User Contacts"
+msgstr "Edytuj kontakty użytkownika"
+
+msgid "Manage USSD codes"
+msgstr "Zarządzaj kodami USSD"
+
+msgid "Manage User USSD Codes"
+msgstr "Zarządzanie kodami USSD użytkownika"
+
+msgid "Each line must have the following format: 'Code description;code'. For user convenience, files are saved to <code>/etc/modem/sms_manager_ussdcodes/</code>."
+msgstr "Każda linijka powinna mieć następujący format: 'Opis kodu;kod'. Dla wygody użytkownika plik zapisywany jest w lokalizacji <code>/etc/modem/sms_manager_ussdcodes/</code>."
+
+msgid "Each line must have the following format: 'AT command description;AT command'. For user convenience, files are saved to <code>/etc/modem/sms_manager_atcmmds/</code>."
+msgstr "Każda linijka powinna mieć następujący format: 'Opis polecenia AT;polecenie AT'. Dla wygody użytkownika plik zapisywany jest w lokalizacji <code>/etc/modem/sms_manager_atcmmds/</code>."
+
+msgid "Manage AT commands"
+msgstr "Zarządzaj poleceniami AT"
+
+msgid "Manage User AT Commands"
+msgstr "Zarządzanie poleceniami AT użytkownika"
+
+msgid "-- Select file --"
+msgstr "-- Wybierz plik --"
+
+msgid "Select file"
+msgstr "Wybierz plik"
+
+msgid "New file name"
+msgstr "Nazwa nowego pliku"
+
+msgid "Delete selected file"
+msgstr "Usuń wybrany plik"
+
+msgid "Show notification icon"
+msgstr "Pokaż ikonę powiadomień"
+
+msgid "Show the new message notification icon on the status overview page."
+msgstr "Pokaż ikonę powiadomień o nowych wiadomościach na stronie przeglądu stanu."
+
+msgid "Loading..."
+msgstr "Ładowanie..."
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Modems"
+msgstr "Modem(-y)"
+
+msgid "Signal Quality"
+msgstr "Jakość sygnału"
+
+msgid "Align preview to:"
+msgstr "Wyrównaj podgląd do:"
+
+msgid "Left"
+msgstr "Lewej"
+
+msgid "Center"
+msgstr "Środka"
+
+msgid "Right"
+msgstr "Prawej"
+
+msgid "New message information block settings"
+msgstr "Ustawienia bloku z informacją o nowych wiadomościach"
+
+msgid "Alignment settings saved successfully"
+msgstr "Ustawienia wyrównania zostały pomyślnie zapisane"
+
+msgid "SMS Info"
+msgstr "Info SMS"
+
+msgid "New SMS"
+msgstr "Nowy(-e) SMS(-y)"
+
+msgid "No new SMS"
+msgstr "Brak nowych SMS-ów"
+
+msgid "Deleting files"
+msgstr "Usuwanie plików"
+
+msgid "Delete all files"
+msgstr "Usuń wszystkie pliki"
+
+msgid "Load .gz archive"
+msgstr "Załaduj archiwum .gz"
+
+msgid "Save .gz archive"
+msgstr "Zapisz archiwum .gz"
+
+msgid "File uploaded and saved to"
+msgstr "Plik został przesłany i zapisany w"
+
+msgid "Failed to extract archive"
+msgstr "Nie udało się rozpakować archiwum"
+
+msgid "Archive extracted to"
+msgstr "Archiwum rozpakowano do"
+
+msgid "Upload error"
+msgstr "Błąd przesyłania"
+
+msgid "Failed to create archive"
+msgstr "Nie udało się utworzyć archiwum"
+
+msgid "Failed to read archive"
+msgstr "Nie udało się odczytać archiwum"
+
+msgid "Are you sure you want to delete all files in the folder?"
+msgstr "Czy na pewno chcesz usunąć wszystkie pliki w folderze?"
+
+msgid "All files deleted successfully"
+msgstr "Wszystkie pliki zostały pomyślnie usunięte"

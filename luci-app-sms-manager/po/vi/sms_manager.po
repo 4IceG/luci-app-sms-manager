@@ -621,3 +621,207 @@ msgstr "Chủ đề và nội dung không được để trống"
 
 msgid "Package mailsend is not installed. Please install it first using the Install... button below"
 msgstr "Gói mailsend chưa được cài đặt. Vui lòng cài đặt trước bằng nút Cài đặt... bên dưới"
+
+msgid "Select modem"
+msgstr "Chọn modem"
+
+msgid "Changing a modem requires refreshing the messages"
+msgstr "Thay đổi modem yêu cầu làm mới tin nhắn"
+
+msgid "Defined AT command files"
+msgstr "Các tệp lệnh AT đã xác định"
+
+msgid "Error loading AT commands file: "
+msgstr "Lỗi khi tải tệp lệnh AT: "
+
+msgid "Select file with AT commands to load"
+msgstr "Chọn tệp chứa lệnh AT để tải"
+
+msgid "No AT commands available"
+msgstr "Không có lệnh AT nào khả dụng"
+
+msgid "Error loading initial AT commands file:"
+msgstr "Lỗi khi tải tệp lệnh AT ban đầu:"
+
+msgid "Error loading USSD codes file: "
+msgstr "Lỗi khi tải tệp mã USSD: "
+
+msgid "Error loading initial USSD file:"
+msgstr "Lỗi khi tải tệp USSD ban đầu:"
+
+msgid "Select file with USSD codes to load"
+msgstr "Chọn tệp chứa mã USSD để tải"
+
+msgid "No USSD codes available"
+msgstr "Không có mã USSD nào khả dụng"
+
+msgid "Defined USSD code files"
+msgstr "Các tệp mã USSD đã xác định"
+
+msgid "File uploaded and saved to"
+msgstr "Tệp đã được tải lên và lưu vào"
+
+msgid "Unable to upload file"
+msgstr "Không thể tải lên tệp"
+
+msgid "Phonebook saved successfully"
+msgstr "Danh bạ điện thoại đã được lưu thành công"
+
+msgid "Unable to save the file"
+msgstr "Không thể lưu tệp"
+
+msgid "filename.user"
+msgstr "tentep.user"
+
+msgid "Select or create a file to edit..."
+msgstr "Chọn hoặc tạo tệp để chỉnh sửa..."
+
+msgid "Please enter a file name"
+msgstr "Vui lòng nhập tên tệp"
+
+msgid "File created successfully"
+msgstr "Tệp đã được tạo thành công"
+
+msgid "Unable to create file"
+msgstr "Không thể tạo tệp"
+
+msgid "Please select a file to delete"
+msgstr "Vui lòng chọn tệp cần xóa"
+
+msgid "Are you sure you want to delete this file?"
+msgstr "Bạn có chắc chắn muốn xóa tệp này không?"
+
+msgid "File deleted successfully"
+msgstr "Tệp đã được xóa thành công"
+
+msgid "Unable to delete file"
+msgstr "Không thể xóa tệp"
+
+msgid "Please select or create a file first"
+msgstr "Vui lòng chọn hoặc tạo tệp trước"
+
+msgid "File saved successfully"
+msgstr "Tệp đã được lưu thành công"
+
+msgid "Unable to save file"
+msgstr "Không thể lưu tệp"
+
+msgid "Load .user file"
+msgstr "Tải tệp .user"
+
+msgid "Save .user file"
+msgstr "Lưu tệp .user"
+
+msgid "Manage contacts"
+msgstr "Quản lý danh bạ"
+
+msgid "Edit User Contacts"
+msgstr "Chỉnh sửa danh bạ người dùng"
+
+msgid "Manage USSD codes"
+msgstr "Quản lý mã USSD"
+
+msgid "Manage User USSD Codes"
+msgstr "Quản lý mã USSD của người dùng"
+
+msgid "Each line must have the following format: 'Code description;code'. For user convenience, files are saved to <code>/etc/modem/sms_manager_ussdcodes/</code>."
+msgstr "Mỗi dòng phải có định dạng sau: 'Mô tả mã;mã'. Để thuận tiện cho người dùng, các tệp được lưu vào <code>/etc/modem/sms_manager_ussdcodes/</code>."
+
+msgid "Each line must have the following format: 'AT command description;AT command'. For user convenience, files are saved to <code>/etc/modem/sms_manager_atcmmds/</code>."
+msgstr "Mỗi dòng phải có định dạng sau: 'Mô tả lệnh AT;lệnh AT'. Để thuận tiện cho người dùng, các tệp được lưu vào <code>/etc/modem/sms_manager_atcmmds/</code>."
+
+msgid "Manage AT commands"
+msgstr "Quản lý lệnh AT"
+
+msgid "Manage User AT Commands"
+msgstr "Quản lý lệnh AT của người dùng"
+
+msgid "-- Select file --"
+msgstr "-- Chọn tệp --"
+
+msgid "Select file"
+msgstr "Chọn tệp"
+
+msgid "New file name"
+msgstr "Tên tệp mới"
+
+msgid "Delete selected file"
+msgstr "Xóa tệp đã chọn"
+
+msgid "Show notification icon"
+msgstr "Hiển thị biểu tượng thông báo"
+
+msgid "Show the new message notification icon on the status overview page."
+msgstr "Hiển thị biểu tượng thông báo tin nhắn mới trên trang tổng quan trạng thái."
+
+msgid "Loading..."
+msgstr "Đang tải..."
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Modems"
+msgstr "Modem"
+
+msgid "Signal Quality"
+msgstr "Chất lượng tín hiệu"
+
+msgid "Align preview to:"
+msgstr "Căn chỉnh xem trước theo:"
+
+msgid "Left"
+msgstr "Trái"
+
+msgid "Center"
+msgstr "Giữa"
+
+msgid "Right"
+msgstr "Phải"
+
+msgid "New message information block settings"
+msgstr "Cài đặt khối thông tin tin nhắn mới"
+
+msgid "Alignment settings saved successfully"
+msgstr "Cài đặt căn chỉnh đã được lưu thành công"
+
+msgid "SMS Info"
+msgstr "Thông tin SMS"
+
+msgid "New SMS"
+msgstr "SMS mới"
+
+msgid "No new SMS"
+msgstr "Không có SMS mới"
+
+msgid "Deleting files"
+msgstr "Đang xóa tệp"
+
+msgid "Delete all files"
+msgstr "Xóa tất cả tệp"
+
+msgid "Load .gz archive"
+msgstr "Tải kho lưu trữ .gz"
+
+msgid "Save .gz archive"
+msgstr "Lưu kho lưu trữ .gz"
+
+msgid "Failed to extract archive"
+msgstr "Không thể giải nén kho lưu trữ"
+
+msgid "Archive extracted to"
+msgstr "Kho lưu trữ được giải nén vào"
+
+msgid "Upload error"
+msgstr "Lỗi tải lên"
+
+msgid "Failed to create archive"
+msgstr "Không thể tạo kho lưu trữ"
+
+msgid "Failed to read archive"
+msgstr "Không thể đọc kho lưu trữ"
+
+msgid "Are you sure you want to delete all files in the folder?"
+msgstr "Bạn có chắc chắn muốn xóa tất cả tệp trong thư mục không?"
+
+msgid "All files deleted successfully"
+msgstr "Tất cả tệp đã được xóa thành công"
