@@ -292,7 +292,7 @@ return baseclass.extend({
 			: modemName;
 
 		let signalIcon = this.getSignalIcon(signalQuality);
-		let smsIconUrl = L.resource('icons/newdelsms.png');
+		let smsIconUrl = L.resource('icons/sms_manager_delsms.png');
 
 		if (!hasFullData) {
 			return E('div', {
